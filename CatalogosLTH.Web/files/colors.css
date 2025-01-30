@@ -1,0 +1,1979 @@
+/** end of general elements **/
+
+/** bootstrap overwrite **/
+.btn-primary,.btn-primary-support,.theme-background-color, #reportuser_clearbutton {
+	background-color: #036ca5 !important;
+	color: #ffffff !important;
+	border-color: #036ca5 !important;
+}
+
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus{
+	border-color:#b60027;
+}
+
+/** end bootstrap overwrite **/
+
+#page-header {
+	border-bottom-color: #036ca5;
+}
+
+#page-header .tabmenu ul li.elo {
+	background-color: #036ca5;
+}
+
+#page-header .tabmenu ul li.elo a {
+	background-color: #036ca5;
+}
+/** end of header colors **/
+.block-container .block_customnavigation .dropdown li > a {
+
+}
+
+.block-container .block_customnavigation .dropdown li:hover > a {
+	color: #036ca5}
+
+.block-container .block_customnavigation li a .icon {
+	background-color: #036ca5;
+}
+
+.block-container .block_customnavigation .dropdown li:hover > a {
+	background-color: #444242;
+	color: #036ca5;
+}
+
+.block-container .block_customnavigation .dropdown li.active {
+	color: #036ca5;
+}
+
+/** end of custom navigation **/
+
+/*  Badges */
+.badges_block_title {
+	color: #036ca5;
+}
+
+.headermenu .logininfo > span.logout-link a{
+	color: #036ca5;
+}
+
+.block-container .block .content .container-content {
+	color: #222222;
+}
+
+.block_calendar_month caption {
+	color: #b60027;
+}
+
+.block_calendar_month abbr {
+	color: #b60027 !important;
+}
+
+.block_calendar_month .calendar-controls a {
+	color: #b60027 !important;
+}
+
+.block_calendar_month .calendar_event_user {
+	background-color: #b60027 !important;
+}
+
+.block_calendar_month .arrow {
+	color: #b60027 !important;
+}
+
+.block .minicalendar td.day.weekend {
+	color:#b60027 !important;
+}
+
+.block .minicalendar td.day{
+	color:#222222 !important;
+}
+
+body {
+	background-color: #ffffff;
+}
+
+#page-header #right-elements .headermenu a i,
+#page-header #right-elements .headermenu a:hover i {
+	color: #ffffff;
+}
+
+#page-header #right-elements .headermenu .logininfo a{
+	color:#222222;
+}
+
+#page-header .tabmenu ul li.portfolio a,
+#page-header .tabmenu ul li.portal a {
+	color:#036ca5;
+}
+
+#page-header .tabmenu ul li.elo{
+	background-color:#036ca5;
+}
+
+.configuration-box #region-configuration{
+	background-color: #ffffff;
+	color: ;
+}
+
+.configuration-box #region-configuration.block-container .block .content .container-content,
+.configuration-box #region-configuration.block-container .block .content .container-content a,
+.configuration-box #region-configuration {
+	color: #000000 !important;
+}
+
+/** Blocks **/
+.block .header{
+	background-color:#036ca5;
+	color:#ffffff;
+}
+
+.block-container .block .content .container-content{
+	color:#222222;
+}
+
+.block .header {
+	background-color: #036ca5;
+}
+
+#page-header .tabmenu ul li.elo a {
+	background-color: #036ca5;
+}
+
+#page-footer a {
+	color: #036ca5;
+}
+#page-footer .footer-logo span {
+	color: #036ca5;
+}
+
+.block_calendar_month caption{
+	border-bottom: 1px solid #b60027 !important;
+}
+
+/*Color or search input*/
+body.jsenabled .block_quickcourselist .submitbutton {
+	color: #036ca5;
+}
+
+.tabrow0 li a {
+	color: #036ca5;
+}
+
+#gridshadebox_content .activity .contentafterlink {
+    background: #036ca5;
+}
+
+/* Fix Color text of blocks*/
+.block-container .block .content .container-content {
+    color: #222222;
+}
+
+/*Fix: Color of links in columns.*/
+.right-column a, .left-column a {
+    color: #222222;
+}
+/*End*/
+
+/*Styles of calendar*/
+.block_calendar_month .arrow {
+    color: #b60027;
+}
+
+.block .minicalendar td.day > a {
+    color: #fff !important;
+    background: #b60027;
+}
+
+.block .minicalendar td.today > a {
+    color: #b60027;
+    background: #000;
+}
+
+.block .minicalendar td.today>a {
+	background: #b60027;
+}
+
+.addreport {
+    background-color: #036ca5;
+}
+
+.addreport:hover {
+   border-color: #b60027;
+}
+
+.file-reports .mform .fitem .felement input[name="submitbutton"] {
+    background: #036ca5;
+}
+
+#helpmenow_office #helpmenow_logged_out_div_0 span,
+#helpmenow_office #helpmenow_logged_in_div_0 a:hover span#tooltip_leave{
+    background: #036ca5;
+}
+
+#helpmenow_office #helpmenow_logged_out_div_0 span:before,
+#helpmenow_office #helpmenow_logged_in_div_0 a:hover span#tooltip_leave:before {
+    border-top: 4px solid #036ca5;
+}
+
+#helpmenow_office #helpmenow_online_students {
+    color: #036ca5;
+}
+
+#category-grid .explore-course-category .content  .courses > li div.data,
+#category-grid .content  .courses > li div.data {
+    background: #ffffff;
+    color: #fff;
+}
+
+#pmnavigation li a .icon{
+	background-color: #036ca5;
+}
+
+#pmnavigation li a:hover .icon{
+	background-color: #036ca5;
+}
+
+.dropdown-vertical .label {
+	color: #222222;
+}
+
+.tabtree > ul {
+	border-bottom: 2px solid #036ca5;
+}
+
+.tabtree ul li.selected a {
+	background: #036ca5 !important;
+}
+
+#turn-edit a {
+	color: #fff;
+}
+
+#turn-customnavigation a {
+	color: #222222;
+}
+
+#turn-edit a span.on, #turn-customnavigation a span.on {
+	background: #036ca5;
+}
+
+/* Styles of submenu of edit blocks */
+.moodle-actionmenu[data-enhanced].show .menu {
+	background-color: #ffffff;
+}
+
+/* Styles for the new breadcrumb */
+.breadcrumb li {
+	background: #222222;
+	color: #ffffff !important;
+}
+
+.breadcrumb li a {
+	color: #ffffff !important;
+}
+
+.breadcrumb > li:last-child, .breadcrumb > li:last-child a {
+	color: #036ca5;
+}
+
+.breadcrumb > li:after {
+	border-left: 15px #222222 solid;
+}
+
+/* My courses */
+.course_detail .content {
+    background: #036ca5;
+}
+
+/*Button add menus of custon navigation*/
+.btn-addMenus {
+    background-color: #036ca5;
+    border: 1px solid #036ca5;
+    color:   !important;
+}
+
+/* Links in hover of custon navigation */
+.block-container .block_customnavigation .dropdown li:hover a span {
+	color: #ffffff;
+}
+
+/*configuration alternative menu*/
+.configuration-box.alternative i:hover, .configuration-box.alternative i.active {
+	background: #ffffff;
+}
+
+/*Marketing spots*/
+#marketing-spots .marketing-spot {
+	border: 1px solid #036ca5;
+}
+
+#marketing-spots .marketing-spot h5 {
+	color: #036ca5;
+	border-bottom: 1px solid #036ca5;
+}
+
+#mainnav  #pmnavigation li:hover > a {
+	background: #444242;
+}
+
+#pmnavigation li.with-submenu:hover > a:before {
+	border-left: 11px solid #444242;
+}
+
+.editing #mainnav.leftcompact #pmnavigation li:hover > a {
+	background: #444242;
+}
+
+#pmnavigation li:hover a .icon {
+	background: #b60027;
+}
+
+#pmnavigation li:hover a span {
+	color: #ffffff;
+}
+
+#pmnavigation li ul {
+	background: ;
+}
+
+
+#pmnavigation li .sub-links li a span {
+	color: ;
+}
+
+#pmnavigation li .sub-links li:hover a span {
+	color: #ffffff;
+}
+
+#pmnavigation li ul {
+	background: ;
+}
+
+#pmnavigation li:hover > ul li:hover a:before {
+	border-left: 11px solid ;
+}
+
+/*Background of blocks*/
+.right-column .block .content .container-content,
+.left-column .block .content .container-content {
+	background:  !important;
+}
+
+/*
+ * Change the selector for subitems of configurations menu of blocks
+ * @author Andres Ag.
+ * @since 08/05/2015
+ * @paradiso
+ */
+/*.block .moodle-actionmenu[data-enhanced].show .menu a .icon-paradisofull, .icon-paradisofull, .logout-link i {*/
+.block .moodle-actionmenu[data-enhanced].show .menu a .icon-paradisofull.fa-cogs, .icon-paradisofull.fa-cogs, .logout-link i {
+	color: #ffffff;
+}
+
+#normal-header #googlech {
+	color: #036ca5;
+}
+
+#normal-header .logout-link i {
+	color: #036ca5;
+}
+
+.block .moodle-core-dragdrop-draghandle:before {
+	color: #ffffff;
+}
+
+/*Forum colors*/
+.forumpost .options .commands a {
+	background-color: #036ca5;
+	color:  !important;
+}
+
+.forumpost .topic .author a, .center-column a {
+	color: #23EDFA;
+}
+
+.sortable_container.style-management .sortable li div .delete {
+	color: ;
+}
+
+/* Custom navigation icons of font awesome */
+.block-container .block_customnavigation .dropdown li a .icon i {
+	color: #ffffff !important;
+}
+
+/*fix user menu items color*/
+.usermenu nav ul li a {
+	color: #555555 !important;
+}
+
+#right-elements .headermenu #profile .usermenu nav ul li a i {
+	color: #ffffff;
+}
+
+#btn-toggle-top span {
+	color: #ffffff;
+}
+
+/*Add color to checkbox courses*/
+#category-grid .explore-course-category.alone .content .courses > li i.course-completed {
+	color: #036ca5;
+}
+
+/*Color of the format tabs*/
+.format-tabs #admin-buttons a.btn:hover{
+	color: #036ca5;
+}
+
+.format-tabs .activity-popup .activity .activity-nav {
+	background: #036ca5;
+}
+
+.format-tabs .activity-popup .activity .activity-nav a {
+	color: #ffffff;
+}
+
+.format-tabs .instancename:hover {
+	color: #036ca5;
+}
+
+.format-tabs .tabs .tab.current-tab {
+	color: #036ca5;
+}
+
+.format-tabs .tab {
+	background: #036ca5;
+	color: #ffffff;
+}
+
+.format-tabs.hide-header .leftcompact #region-pre {
+	background: #036ca5;
+}
+
+.format-tabs .last-viewed > div:first-child .panel-heading {
+	border-bottom: 5px #036ca5 solid !important;
+}
+
+#course-notes textarea {
+	border: 1px solid #036ca5;
+}
+
+.container-notes:before {
+	border-bottom: 10px solid #036ca5;
+}
+
+
+#self-enrolled span a {
+	color: #036ca5;
+}
+
+#add-tabs-popup-content button.btn-primary {
+	background: #036ca5;
+	border-color: #036ca5;
+}
+
+#add-tabs-popup-content .nav.nav-tabs li.active a{
+	background: #036ca5;
+}
+
+.tab-content-help .alert-title h4 {
+	color: #036ca5;
+}
+
+#add-tabs-header .tab-header {
+	background: #036ca5;
+}
+
+#add-tabs-header .tab-header.current-tab {
+	color: #036ca5;
+}
+
+#add-tabs-header .tab-header.current-tab span {
+	color: #036ca5;
+}
+
+#add-tabs-content .tab-content-activities .activity.current-activity {
+	background: #036ca5;
+}
+
+.tab-help .help-icon span {
+	background-color: #036ca5;
+}
+
+.mod-add .custom-help {
+	color: #036ca5;
+}
+
+.tab-content-activities .activity i.fa, .tab-content-activities .activity p {
+	color: #036ca5;
+}
+
+#btn-add-newtab i {
+	color: #036ca5;
+}
+
+#add-tabs-header .tab-header {
+	background: #036ca5;
+}
+
+#add-tabs-header .tab-header::after {
+	background: #036ca5;
+}
+
+.format-tabs .add-content a i{
+	color: #036ca5;
+}
+
+.fa.show-description {
+	color: #036ca5;
+}
+
+#plms-tabs-edit-course i {
+	color: #036ca5;
+}
+
+.format-tabs .left.side .edit-section a i:hover {
+	color: #036ca5;
+}
+
+.format-tabs .left.side .section-handle:hover:before {
+	color: #036ca5;
+}
+
+.upgreen {
+  border-bottom: 4px solid #036ca5;
+}
+
+#page-course-view-paradisotabs .pie-value {
+	color:#036ca5;
+}
+
+#page-course-view-paradisotabs .fa-minus-square:before {
+  color:#036ca5;
+}
+
+.complete-icon i {
+	color: #036ca5;
+}
+
+.btn-plms-primary {
+	background: #036ca5 !important;
+}
+
+.panel-plms-primary.panel-colorful {
+	background: #036ca5;
+	border-color: #036ca5;
+}
+
+.dropdown-menu.plms-dropdown {
+	background-color: #ffffff;
+}
+
+.dropdown-menu.plms-dropdown li a{
+	color: #000000;
+}
+
+.dropdown-menu.plms-dropdown li a:hover {
+	background-color: #036ca5;
+	color: #ffffff;
+}
+
+#format-tabs-config {
+	background: #ffffff;
+}
+
+.format-tabs #admin-buttons a.btn:hover{
+	color: #036ca5;
+}
+
+.format-tabs .activity-popup .activity .activity-nav {
+	background: #036ca5;
+}
+
+.format-tabs .activity-popup .activity .activity-nav a {
+	color: #ffffff;
+}
+
+.format-tabs .instancename:hover {
+	color: #036ca5;
+}
+
+.format-tabs .tabs .tab.current-tab {
+	color: #036ca5;
+}
+
+.format-tabs .tab {
+	background: #036ca5;
+	color: #ffffff ;
+}
+
+.format-tabs.hide-header .leftcompact #region-pre {
+	background: #036ca5;
+}
+
+.format-tabs .last-viewed > div:first-child .panel-heading {
+	border-bottom: 5px #036ca5 solid !important;
+}
+
+#course-notes textarea {
+	border: 1px solid #036ca5;
+}
+
+.container-notes:before {
+	border-bottom: 10px solid #036ca5;
+}
+
+#self-enrolled span a {
+	color: #036ca5;
+}
+
+#add-tabs-popup-content button.btn-primary {
+	background: #036ca5;
+	border-color: #036ca5;
+}
+
+#add-tabs-popup-content .nav.nav-tabs li.active a{
+	background: #036ca5;
+}
+
+.tab-content-help .alert-title h4 {
+	color: #036ca5;
+}
+
+#add-tabs-header .tab-header {
+	background: #036ca5;
+}
+
+#add-tabs-header .tab-header.current-tab {
+	color: #036ca5;
+}
+
+#add-tabs-header .tab-header.current-tab span {
+	color: #036ca5;
+}
+
+#add-tabs-content .tab-content-activities .activity.current-activity {
+	background: #036ca5;
+}
+
+.tab-help .help-icon span {
+	background-color: #036ca5;
+}
+
+.mod-add .custom-help {
+	color: #036ca5;
+}
+
+.tab-content-activities .activity i.fa, .tab-content-activities .activity p {
+	color: #036ca5;
+}
+
+#btn-add-newtab i {
+	color: #036ca5;
+}
+
+#add-tabs-header .tab-header {
+	background: #036ca5;
+}
+
+#add-tabs-header .tab-header::after {
+	background: #036ca5;
+}
+
+.format-tabs .add-content a i{
+	color: #036ca5;
+}
+
+.fa.show-description {
+	color: #036ca5;
+}
+
+#plms-tabs-edit-course i {
+	color: #036ca5;
+}
+
+.format-tabs .left.side .edit-section a i:hover {
+	color: #036ca5;
+}
+
+.format-tabs .left.side .section-handle:hover:before {
+	color: #036ca5;
+}
+
+.upgreen {
+	border-bottom: 4px solid #036ca5;
+}
+
+#page-course-view-paradisotabs .pie-value {
+	color:#036ca5;
+}
+
+#page-course-view-paradisotabs .fa-minus-square:before {
+  color:#036ca5;
+}
+
+.complete-icon i {
+	color: #036ca5;
+}
+
+.btn-plms-primary {
+	background: #036ca5 !important;
+}
+
+.panel-plms-primary.panel-colorful {
+	background: #036ca5;
+	border-color: #036ca5;
+}
+
+#normal-header #top-navbar ul li:hover a {
+    background-color: #444242;
+}
+
+#normal-header #top-navbar ul li:hover a span {
+    color: #ffffff;
+}
+
+.block_ranking .ranking-item .xp {
+	color: #036ca5;
+}
+
+.block_ranking .bold {
+	color: #ffffff;
+}
+
+.block_ranking table {
+	border-bottom: 1px solid #036ca5;
+}
+
+.block_ranking table tr:first-child {
+	background: #036ca5;
+}
+
+.configuration-box #region-configuration.visible, .configuration-box #region-configuration:hover {
+	border: 1px solid #036ca5;
+}
+
+.configuration-box #googlech:hover i, .configuration-box #googlech i.active {
+	background: #ffffff;
+}
+
+.badges_description {
+	color: #222222 !important';
+}
+
+/**
+* Fix color of background of page menu
+* @author Andres Ag.
+* @since Feb 12th of 2016
+* @paradiso
+*/
+#page_menu {
+	background: #ffffff;
+}
+
+.carousel-control {
+	color: #30add1;
+}
+
+#paradisolmsfullCarousel:hover .carousel-control:hover {
+	color: #217a94;
+}
+
+.carousel-indicators li:hover {
+	background: #217a94;
+	border-color: #217a94;
+}
+
+.carousel-indicators {
+	box-shadow: 0px 0px 5px #30add1;
+}
+
+.carousel-indicators li {
+	border-color: #30add1;
+}
+
+.carousel-indicators .active {
+	background-color: #30add1;
+}
+
+#paradisolmsfullCarousel.carousel .carousel-inner>.item.side-caption div.the-side-caption .the-side-caption-content {
+	color: #ffffff;
+}
+
+.carousel-indicators li {
+	border-color: #30add1;
+}
+
+.carousel-indicators .active {
+	background-color: #30add1;
+}
+
+.carousel-caption h4, .carousel-caption p {
+	color: #ffffff;
+}
+
+.usermenu {
+	background: #BD60FB;
+	border: 1.5px solid #036ca5;
+}
+
+.usermenu:before {
+	border-bottom-color: #BD60FB;
+}
+
+.usermenu nav ul li a:hover {
+	background-color: #036ca5 !important;
+}
+
+#menu-var {
+	background: #036ca5;
+}
+
+#menu-var #leftelements-container ul li .submenu {
+	background: ;
+	border: 1px solid #036ca5;
+}
+
+#menu-var #leftelements-container ul li:hover a {
+	background: ;
+}
+
+#menu-var #leftelements-container ul li:hover > .submenu ul li:hover > a {
+	background: #036ca5;
+}
+
+#hide-custom-navigation.hide-cn {
+	background: #036ca5;
+}
+
+#hide-custom-navigation.show-cn {
+	background: #036ca5;
+}
+
+#hide-custom-navigation.hide-cn:hover, #hide-custom-navigation.show-cn:hover {
+	background: #b60027;
+}
+
+@media (min-width: 767px){
+	.editing #mainnav.leftcompact .block_customnavigation .dropdown li:hover > a {
+		background-color: #444242;
+	}
+}
+
+#paradisolmsfull-settings i {
+	color: #036ca5;
+}
+
+span.logo-alternativecolor {
+	color: #000000;
+}
+
+span.logo-foregroundcolor {
+	color: #036ca5;
+}
+
+.styler-switch {
+	background-color: ;
+}
+
+.styler-switch i {
+	color: ;
+}
+
+.left-styler {
+	background-color: ;
+}
+
+.left-style-selector #gear_theme_settings {
+	color: ;
+}
+
+#icon-fonts div .close-fa {
+	color: #036ca5;
+}
+
+#icon-fonts ul li a:hover, #icon-fonts ul li a.selected {
+	background: #036ca5;
+}
+
+#btn-toggle-custom-navigation {
+	background: #036ca5;
+}
+
+#normal-header #btn-toggle-top span {
+	color: #036ca5;
+}
+
+#aside {
+	background-color: #ffffff !important;
+}
+
+#aside-container #aside .nav-tabs li a {
+	background-color: #ffffff !important;
+}
+
+#aside-container #aside  .nav-tabs li.active a {
+	background: #036ca5 !important;
+}
+
+#aside-container #aside .nav-tabs li a i, #aside-container #aside .nav-tabs li a span {
+	color: #000000;
+}
+
+#aside-container .nav-tabs li.active a i {
+	border: 1px solid #fff;
+}
+
+#aside-container .nav-tabs li a i {
+	background: #036ca5 !important;
+}
+
+#config-select-menu li.active {
+	border-color: #036ca5 !important;
+}
+
+
+.btn-plms-configmenu:hover {
+	color: #036ca5 !important;
+}
+
+.btn.plms-fade-back {
+	background-color: #036ca5;
+}
+
+.btn.plms-fade-back:hover {
+	color: #ffffff !important;
+}
+
+.plms-fade-back:hover .pad-all.icon-circle  {
+	border-color: #ffffff !important;
+}
+
+
+.btn-plms-show-content.plms-active i, .btn-plms-show-content.plms-active span {
+	color: #036ca5;
+}
+
+.plms-administration-list li a {
+	color: #036ca5 !important;
+}
+
+.plms-administration-list li a i {
+	color: #ffffff !important;
+}
+
+header .points{
+	color:#036ca5;
+}
+
+header #profile  #profileblock a img{
+	border:solid 3px #036ca5;
+}
+
+.lms-set-content .paradisolmsfull_setting a:hover .fa{
+	color: #036ca5;
+}
+
+/******************************Programmed values*******************************/
+				.lms-a-orange-white15,
+				.lms-b-orange-white15,
+				.lms-c-orange-white15{
+					background-color:#ffffff;
+				}
+				.lms-a-orange-white15 .lms-theme-head,
+				.lms-b-orange-white15 .lms-theme-head,
+				.lms-c-orange-white15 .lms-theme-head
+				{
+					background-color:#ffffff;
+				}
+				.lms-a-orange-white15 .lms-theme-nav,
+				.lms-b-orange-white15 .lms-theme-nav,
+				.lms-c-orange-white15 .lms-theme-nav
+				{
+					background:#ffffff;
+				}
+				.lms-a-orange-white15:before,
+				.lms-b-orange-white15:before,
+				.lms-c-orange-white15:before,
+				.lms-a-orange-white15 .lms-theme-brand,
+				.lms-b-orange-white15 .lms-theme-brand,
+				.lms-c-orange-white15 .lms-theme-nav,
+				.lms-a-orange-white15 .lms-theme-head{
+					background:#ee851d;
+				}
+								.lms-a-blue-white16,
+				.lms-b-blue-white16,
+				.lms-c-blue-white16{
+					background-color:#ffffff;
+				}
+				.lms-a-blue-white16 .lms-theme-head,
+				.lms-b-blue-white16 .lms-theme-head,
+				.lms-c-blue-white16 .lms-theme-head
+				{
+					background-color:#ffffff;
+				}
+				.lms-a-blue-white16 .lms-theme-nav,
+				.lms-b-blue-white16 .lms-theme-nav,
+				.lms-c-blue-white16 .lms-theme-nav
+				{
+					background:#ffffff;
+				}
+				.lms-a-blue-white16:before,
+				.lms-b-blue-white16:before,
+				.lms-c-blue-white16:before,
+				.lms-a-blue-white16 .lms-theme-brand,
+				.lms-b-blue-white16 .lms-theme-brand,
+				.lms-c-blue-white16 .lms-theme-nav,
+				.lms-a-blue-white16 .lms-theme-head{
+					background:#007bff;
+				}
+								.lms-a-green-black18,
+				.lms-b-green-black18,
+				.lms-c-green-black18{
+					background-color:#000000;
+				}
+				.lms-a-green-black18 .lms-theme-head,
+				.lms-b-green-black18 .lms-theme-head,
+				.lms-c-green-black18 .lms-theme-head
+				{
+					background-color:#000000;
+				}
+				.lms-a-green-black18 .lms-theme-nav,
+				.lms-b-green-black18 .lms-theme-nav,
+				.lms-c-green-black18 .lms-theme-nav
+				{
+					background:#000000;
+				}
+				.lms-a-green-black18:before,
+				.lms-b-green-black18:before,
+				.lms-c-green-black18:before,
+				.lms-a-green-black18 .lms-theme-brand,
+				.lms-b-green-black18 .lms-theme-brand,
+				.lms-c-green-black18 .lms-theme-nav,
+				.lms-a-green-black18 .lms-theme-head{
+					background:#6ebc00;
+				}
+								.lms-a-salesforce29,
+				.lms-b-salesforce29,
+				.lms-c-salesforce29{
+					background-color:#ffffff;
+				}
+				.lms-a-salesforce29 .lms-theme-head,
+				.lms-b-salesforce29 .lms-theme-head,
+				.lms-c-salesforce29 .lms-theme-head
+				{
+					background-color:#ffffff;
+				}
+				.lms-a-salesforce29 .lms-theme-nav,
+				.lms-b-salesforce29 .lms-theme-nav,
+				.lms-c-salesforce29 .lms-theme-nav
+				{
+					background:#ffffff;
+				}
+				.lms-a-salesforce29:before,
+				.lms-b-salesforce29:before,
+				.lms-c-salesforce29:before,
+				.lms-a-salesforce29 .lms-theme-brand,
+				.lms-b-salesforce29 .lms-theme-brand,
+				.lms-c-salesforce29 .lms-theme-nav,
+				.lms-a-salesforce29 .lms-theme-head{
+					background:#1797C0;
+				}
+								.lms-a-lth33,
+				.lms-b-lth33,
+				.lms-c-lth33{
+					background-color:#ffffff;
+				}
+				.lms-a-lth33 .lms-theme-head,
+				.lms-b-lth33 .lms-theme-head,
+				.lms-c-lth33 .lms-theme-head
+				{
+					background-color:#ffffff;
+				}
+				.lms-a-lth33 .lms-theme-nav,
+				.lms-b-lth33 .lms-theme-nav,
+				.lms-c-lth33 .lms-theme-nav
+				{
+					background:#ffffff;
+				}
+				.lms-a-lth33:before,
+				.lms-b-lth33:before,
+				.lms-c-lth33:before,
+				.lms-a-lth33 .lms-theme-brand,
+				.lms-b-lth33 .lms-theme-brand,
+				.lms-c-lth33 .lms-theme-nav,
+				.lms-a-lth33 .lms-theme-head{
+					background:#036ca5;
+				}
+								.lms-a-target34,
+				.lms-b-target34,
+				.lms-c-target34{
+					background-color:#ffffff;
+				}
+				.lms-a-target34 .lms-theme-head,
+				.lms-b-target34 .lms-theme-head,
+				.lms-c-target34 .lms-theme-head
+				{
+					background-color:#ffffff;
+				}
+				.lms-a-target34 .lms-theme-nav,
+				.lms-b-target34 .lms-theme-nav,
+				.lms-c-target34 .lms-theme-nav
+				{
+					background:#ffffff;
+				}
+				.lms-a-target34:before,
+				.lms-b-target34:before,
+				.lms-c-target34:before,
+				.lms-a-target34 .lms-theme-brand,
+				.lms-b-target34 .lms-theme-brand,
+				.lms-c-target34 .lms-theme-nav,
+				.lms-a-target34 .lms-theme-head{
+					background:#C10013;
+				}
+								.lms-a-walmart35,
+				.lms-b-walmart35,
+				.lms-c-walmart35{
+					background-color:#ffffff;
+				}
+				.lms-a-walmart35 .lms-theme-head,
+				.lms-b-walmart35 .lms-theme-head,
+				.lms-c-walmart35 .lms-theme-head
+				{
+					background-color:#ffffff;
+				}
+				.lms-a-walmart35 .lms-theme-nav,
+				.lms-b-walmart35 .lms-theme-nav,
+				.lms-c-walmart35 .lms-theme-nav
+				{
+					background:#ffffff;
+				}
+				.lms-a-walmart35:before,
+				.lms-b-walmart35:before,
+				.lms-c-walmart35:before,
+				.lms-a-walmart35 .lms-theme-brand,
+				.lms-b-walmart35 .lms-theme-brand,
+				.lms-c-walmart35 .lms-theme-nav,
+				.lms-a-walmart35 .lms-theme-head{
+					background:#1A75CF;
+				}
+								.lms-a-blue-white36,
+				.lms-b-blue-white36,
+				.lms-c-blue-white36{
+					background-color:#ffffff;
+				}
+				.lms-a-blue-white36 .lms-theme-head,
+				.lms-b-blue-white36 .lms-theme-head,
+				.lms-c-blue-white36 .lms-theme-head
+				{
+					background-color:#ffffff;
+				}
+				.lms-a-blue-white36 .lms-theme-nav,
+				.lms-b-blue-white36 .lms-theme-nav,
+				.lms-c-blue-white36 .lms-theme-nav
+				{
+					background:#ffffff;
+				}
+				.lms-a-blue-white36:before,
+				.lms-b-blue-white36:before,
+				.lms-c-blue-white36:before,
+				.lms-a-blue-white36 .lms-theme-brand,
+				.lms-b-blue-white36 .lms-theme-brand,
+				.lms-c-blue-white36 .lms-theme-nav,
+				.lms-a-blue-white36 .lms-theme-head{
+					background:#007bff;
+				}
+								.lms-a-green-black37,
+				.lms-b-green-black37,
+				.lms-c-green-black37{
+					background-color:#000000;
+				}
+				.lms-a-green-black37 .lms-theme-head,
+				.lms-b-green-black37 .lms-theme-head,
+				.lms-c-green-black37 .lms-theme-head
+				{
+					background-color:#000000;
+				}
+				.lms-a-green-black37 .lms-theme-nav,
+				.lms-b-green-black37 .lms-theme-nav,
+				.lms-c-green-black37 .lms-theme-nav
+				{
+					background:#000000;
+				}
+				.lms-a-green-black37:before,
+				.lms-b-green-black37:before,
+				.lms-c-green-black37:before,
+				.lms-a-green-black37 .lms-theme-brand,
+				.lms-b-green-black37 .lms-theme-brand,
+				.lms-c-green-black37 .lms-theme-nav,
+				.lms-a-green-black37 .lms-theme-head{
+					background:#6ebc00;
+				}
+								.lms-a-landmark38,
+				.lms-b-landmark38,
+				.lms-c-landmark38{
+					background-color:#ffffff;
+				}
+				.lms-a-landmark38 .lms-theme-head,
+				.lms-b-landmark38 .lms-theme-head,
+				.lms-c-landmark38 .lms-theme-head
+				{
+					background-color:#ffffff;
+				}
+				.lms-a-landmark38 .lms-theme-nav,
+				.lms-b-landmark38 .lms-theme-nav,
+				.lms-c-landmark38 .lms-theme-nav
+				{
+					background:#ffffff;
+				}
+				.lms-a-landmark38:before,
+				.lms-b-landmark38:before,
+				.lms-c-landmark38:before,
+				.lms-a-landmark38 .lms-theme-brand,
+				.lms-b-landmark38 .lms-theme-brand,
+				.lms-c-landmark38 .lms-theme-nav,
+				.lms-a-landmark38 .lms-theme-head{
+					background:#ee851d;
+				}
+								.lms-a-america-airlines39,
+				.lms-b-america-airlines39,
+				.lms-c-america-airlines39{
+					background-color:#ffffff;
+				}
+				.lms-a-america-airlines39 .lms-theme-head,
+				.lms-b-america-airlines39 .lms-theme-head,
+				.lms-c-america-airlines39 .lms-theme-head
+				{
+					background-color:#ffffff;
+				}
+				.lms-a-america-airlines39 .lms-theme-nav,
+				.lms-b-america-airlines39 .lms-theme-nav,
+				.lms-c-america-airlines39 .lms-theme-nav
+				{
+					background:#ffffff;
+				}
+				.lms-a-america-airlines39:before,
+				.lms-b-america-airlines39:before,
+				.lms-c-america-airlines39:before,
+				.lms-a-america-airlines39 .lms-theme-brand,
+				.lms-b-america-airlines39 .lms-theme-brand,
+				.lms-c-america-airlines39 .lms-theme-nav,
+				.lms-a-america-airlines39 .lms-theme-head{
+					background:#145494;
+				}
+								.lms-a-orange-white40,
+				.lms-b-orange-white40,
+				.lms-c-orange-white40{
+					background-color:#ffffff;
+				}
+				.lms-a-orange-white40 .lms-theme-head,
+				.lms-b-orange-white40 .lms-theme-head,
+				.lms-c-orange-white40 .lms-theme-head
+				{
+					background-color:#ffffff;
+				}
+				.lms-a-orange-white40 .lms-theme-nav,
+				.lms-b-orange-white40 .lms-theme-nav,
+				.lms-c-orange-white40 .lms-theme-nav
+				{
+					background:#ffffff;
+				}
+				.lms-a-orange-white40:before,
+				.lms-b-orange-white40:before,
+				.lms-c-orange-white40:before,
+				.lms-a-orange-white40 .lms-theme-brand,
+				.lms-b-orange-white40 .lms-theme-brand,
+				.lms-c-orange-white40 .lms-theme-nav,
+				.lms-a-orange-white40 .lms-theme-head{
+					background:#ee851d;
+				}
+								.lms-a-lth-entrenamiento41,
+				.lms-b-lth-entrenamiento41,
+				.lms-c-lth-entrenamiento41{
+					background-color:#0410C8;
+				}
+				.lms-a-lth-entrenamiento41 .lms-theme-head,
+				.lms-b-lth-entrenamiento41 .lms-theme-head,
+				.lms-c-lth-entrenamiento41 .lms-theme-head
+				{
+					background-color:#0410C8;
+				}
+				.lms-a-lth-entrenamiento41 .lms-theme-nav,
+				.lms-b-lth-entrenamiento41 .lms-theme-nav,
+				.lms-c-lth-entrenamiento41 .lms-theme-nav
+				{
+					background:#0410C8;
+				}
+				.lms-a-lth-entrenamiento41:before,
+				.lms-b-lth-entrenamiento41:before,
+				.lms-c-lth-entrenamiento41:before,
+				.lms-a-lth-entrenamiento41 .lms-theme-brand,
+				.lms-b-lth-entrenamiento41 .lms-theme-brand,
+				.lms-c-lth-entrenamiento41 .lms-theme-nav,
+				.lms-a-lth-entrenamiento41 .lms-theme-head{
+					background:#FAFA14;
+				}
+				
+#mainnav-container {
+	background-color:#ffffff;
+	border-right:solid 1px #036ca5;
+	border-left:solid 1px #036ca5;
+}
+
+
+#mainnav .block-container .block_customnavigation ul.dropdown li:hover > a,
+#mainnav .block-container .block_customnavigation ul.dropdown li a:hover{
+	background-color:#036ca5 !important;
+	color:#ffffff !important;
+}
+
+#mainnav .block-container .block_customnavigation ul.dropdown li ul li {
+	color: #222222 ;
+}
+
+#mainnav .block-container .block_customnavigation ul.dropdown li ul li:hover a span {
+	background-color:#036ca5 !important;
+	color:#ffffff !important;
+}
+
+#mainnav .block-container .block_customnavigation ul.dropdown li ul li:hover a .label {
+	background-color:#036ca5 !important;
+	color:#ffffff !important;
+}
+
+#mainnav .block-container .block_customnavigation ul.dropdown li ul li a .label {
+    color: #222222 ;
+}
+
+#mainnav .block-container .block_customnavigation ul.dropdown li.with-submenu ul li a {
+	color: #222222 ;
+}
+
+#mainnav .block-container .block_customnavigation ul.dropdown li ul li:hover a
+#mainnav .block-container .block_customnavigation ul.dropdown li ul li a:hover {
+    color:#ffffff !important;x
+}
+#mainnav .block-container .block_customnavigation ul.dropdown li ul li a {
+	color: #222222 ;
+}
+
+#mainnav {
+	background-color: #ffffff !important;
+}
+
+#mainnav-menu a.active-item,
+#mainnav-menu a:hover {
+	color: #ffffff !important;
+	background-color: #b60027 !important;
+}
+
+header#navbar #navbar-container {
+	color: #036ca5;
+	/**background-color: #036ca5 !important;**/
+}
+
+body {
+		background-image: url("") !important;
+	background-repeat:  !important;
+	background-attachment:  !important;
+}
+
+
+#content-container {
+		background-image: url("") !important;
+	background-repeat:  !important;
+	background-attachment:  !important;
+}
+
+/* Backgrunds */
+#content-container {
+	background-color: #ececec;
+	background-repeat: ;
+	background-attachment: ;
+}
+
+header#navbar #navbar-container {
+	background-color: #ffffff;
+	background-repeat: ;
+	background-attachment: ;
+}
+
+#mainnav-menu a, #mainnav-menu .menu-title {
+	color: 646766;
+}
+
+/**
+ * The class "active-item" is to check as active the current menu page
+ * @author @andres.a_paradiso
+ * @since 2015-08-24
+ * @paradiso
+ */
+#mainnav-menu a.active-item .menu-title,
+#mainnav-menu a:hover .menu-title {
+	color: #ffffff !important;
+}
+#mainnav-menu li a.active-item  .icon,
+#mainnav-menu li a:hover  .icon{
+	border-color: #ffffff !important;
+}
+
+#mainnav-menu>li>a.active-item,
+#mainnav-menu>li>a.hover {
+	background-color: #036ca5;
+}
+
+.moodle-actionmenu[data-enhanced].show .menu a {
+	color: #000000 !important;
+}
+
+.activity .moodle-actionmenu[data-enhanced] .menu.align-tr-br li a:hover,
+.jsenabled .moodle-actionmenu[data-enhanced] .menu.align-tr-br a:hover {
+	background-color: #036ca5 !important;
+	color: #ffffff !important;
+}
+
+/*
+* @description: Add class for buttom color Show/ Hide Left Menu
+* @author Miguel Antonio Posada.
+* @since 27-07-2015
+* @modified 18/09/2015 miguel posada add to left menu buttons
+* @paradiso miguel.p@paradisosolutions.com
+*/
+#arrowButLeft {
+	color: #036ca5;
+	/*background-color: #ffffff;*/
+}
+
+#arrowButRight {
+	color: #036ca5;
+	background-color: #ffffff;
+}
+
+/*White Menu*/
+ul.dropdown-menu.white-menu > li > a{
+	color: #525252;
+}
+
+ul.dropdown-menu.white-menu > li > a:hover{
+	color: #000000;
+	background-color:#036ca5;
+}
+ul.dropdown-menu.white-menu li a span.badge{
+	border:solid 1px #036ca5;
+}
+
+ul.dropdown-menu.white-menu i{
+	color: #000000;
+}
+ul.dropdown-menu.white-menu  a:hover i{
+	color:#ffffff;
+}
+ul.dropdown-menu.white-menu .divider{
+    background-color:  #000000 !important;
+}
+a.hidefilterico{
+	color:#036ca5;
+    display: inline-block;
+    font-size: 1.3em;
+    margin-left: 5px;
+}
+/*DARK Menu*/
+.dark-menu.btn-primary:hover,
+.dark-menu.btn-primary:active,
+.dark-menu.btn-primary.active,
+.open > .dark-menu.dropdown-toggle.btn-primary{
+	background-color: transparent;
+    color: inherit;
+}
+ul.dropdown-menu.dark-menu{
+	background-color:#ffffff;
+	border: solid 1px #ffffff;
+
+	border-radius: 10px;
+    min-width: 120px;
+    padding: 10px 0;
+    text-align: left;
+}
+
+ul.dropdown-menu.dark-menu:before{
+    border:none !important;
+}
+
+ul.dropdown-menu.dark-menu > li,
+ul.dropdown-menu.dark-menu > li > a{
+	color: #000000;
+}
+
+ul.dropdown-menu.dark-menu > li:hover,
+ul.dropdown-menu.dark-menu > li > a:hover{
+	color:#ffffff;
+	background-color:#036ca5;
+}
+
+ul.dropdown-menu.dark-menu li a span.badge{
+	border:solid 1px #036ca5;
+}
+
+ul.dropdown-menu.dark-menu i{
+	color: #000000;
+}
+ul.dropdown-menu.dark-menu  a:hover i{
+	color:#ffffff;
+}
+#profile .logininfo .edit-link ul.dropdown-menu i{
+    color: #000000 !important;
+}
+ul.dropdown-menu.dark-menu .divider,
+#profile .logininfo .edit-link .dropdown-menu .divider{
+    background-color:  #000000 !important;
+}
+#profile .logininfo .edit-link ul.dropdown-menu a:hover i{
+	color:#ffffff !important;
+}
+#profile .logininfo .edit-link ul.dropdown-menu{
+    background-color: #ffffff !important;
+
+	border-radius: 10px;
+    min-width: 204px;
+    padding: 10px 0 !important;
+    text-align: left;
+}
+#profile .logininfo .edit-link ul.dropdown-menu:before{
+    border:none !important;
+}
+#profile .logininfo .edit-link ul.dropdown-menu > li > a{
+	color: #000000;
+}
+
+#profile .logininfo .edit-link ul.dropdown-menu > li > a:hover{
+	color:#ffffff;
+	background-color:#036ca5;
+}
+
+#profile .logininfo .edit-link ul.dropdown-menu li a span.badge{
+	border:solid 1px #036ca5;
+}
+#profile .logininfo .edit-link ul.dropdown-menu li a:hover span.badge{
+	border:solid 1px #ffffff;
+	color:#ffffff;
+}
+
+#page-course-view-paradisotabs ul.img-text .menu.align-tr-br {
+	background-color: #ffffff !important;
+	padding: 5px !important;
+}
+
+#course-continue .alert {
+	background-color: #036ca5;
+	color: #ffffff;
+}
+/**
+ * Change color of the btn-success with the theme settings
+ * @author @andres.a_paradiso
+ * @since 2015-08-24
+ * @paradiso
+ */
+.btn-success,
+.btn-success:focus,
+.btn-hover-success:hover,
+.btn-hover-success:active,
+.btn-hover-success.active,
+.btn.btn-active-success:active,
+.btn.btn-active-success.active,
+.dropdown.open > .btn.btn-active-success,
+.btn-group.open .dropdown-toggle.btn.btn-active-success{
+	background-color: #036ca5 !important;
+	color: #ffffff !important;
+	border-color: #036ca5 !important;
+}
+
+
+.btn-course-notes {
+	color: #036ca5;
+}
+
+.badges-profile li .badge-picture-name .badge-name {
+	color: #036ca5;
+}
+
+.performace-dashboard-link:hover{color:#036ca5 !important}
+.performace-dashboard-link:hover i{background-color:#036ca5 !important}
+
+ul.organizations-tree li div:hover{background-color:#036ca5;}
+ul.organizations-tree li div:hover a{color:#ffffff}
+ul.organizations-tree li div:hover span{color:#ffffff}
+.tabtree .tabrow0 li a {
+    background-color: #036ca5 !important;
+}
+
+/**
+* For the new userprofile
+* @author Andres Ag.
+* @since September 04 of 2015
+* @paradiso
+*/
+.user-profile-background {
+	background-color: #036ca5;
+}
+
+/**
+* For all the profile img on profile/message
+* @author Esteban E.
+* @since September 11 2015
+* @paradiso
+*/
+.img-profile-contacts{
+	border:solid 3px #036ca5;
+}
+
+/**
+* time of the message color
+* @author Esteban E.
+* @since September 11 2015
+* @paradiso
+*/
+.time-profile-color{
+	color: #036ca5 !important;
+}
+
+/**
+* color for after action on checkbox o radio buttoms
+* @author Esteban E.
+* @since September 11 2015
+* @paradiso
+*/
+.checkbox-style-management-color:after{
+	color: #036ca5 !important;
+}
+/**
+* color for after action on checkbox o radio buttoms
+* @author Esteban E.
+* @since September 11 2015
+* @paradiso
+*/
+#drag-drop-element-course-lms #drag-and-drop-zone .btn-primary:hover
+{
+	background-color: #036ca5 !important;
+
+}
+
+div.edit-logo div.col-md-6 .fa-trash,
+div.container-fluid h1.logo div#float-edit .fa-pencil{
+	color:#000000;
+	background-color:#036ca5;
+}
+/**
+* @Description: Color to center pagination rows over popup in courses
+* @author Miguel Posada.
+* @since September 22 2015
+* @paradiso
+*/
+i.fa.fa-2x.fa-angle-right, i.fa.fa-2x.fa-angle-left {
+ color: #036ca5 !important;
+}
+
+/**
+* @Description: Hover color new profile menu options
+* @author Miguel Posada.
+* @since September 22 2015
+* @paradiso
+*/
+
+.full-branch li:hover
+{
+    cursor: pointer;
+    background-color: #036ca5 !important;
+    color: #000000;
+}
+
+.full-branch ul li:hover
+{
+    cursor: pointer;
+    background-color: #036ca5 !important;
+    color: #000000;
+}
+
+
+/**
+* Color of pagination of admin/user.php
+* @author Andres Ag.
+* @since October 02 of 2015
+* @paradiso
+*/
+.plms-pagination .page-number span {
+    background-color: #036ca5 !important;
+}
+
+/**
+* Color of background for tabs of course wizard
+* @author Andres Ag.
+* @since October 02 of 2015
+* @paradiso
+*/
+.bg-plms-foreground {
+	background-color: #036ca5;
+	color: #ffffff;
+}
+
+.bg-plms-foreground-forced {
+	background-color: #036ca5 !important;
+	color: #ffffff !important;
+}
+
+/**
+* Color of background for the pagination current page
+* @author Andres Ariza @andres.a_paradiso
+* @since October 09 of 2015
+* @paradiso
+*/
+ul.pagination-paradiso li span.current-page{
+	background-color: #036ca5 !important;
+	color: #ffffff !important;
+}
+
+/**
+* Color of text submenu profile setting
+* @author Esteban E.
+* @since October 15 of 2015
+* @parbadiso
+*/
+.full-ranch .full-branch-li {
+
+	color: #ffffff;
+}
+
+.questionbankwindow .header .title
+{
+	background-color: #036ca5 !important;
+}
+.questionbankwindow .header
+{
+	background-color: #036ca5 !important;
+}
+
+/*
+* @description : backgroud color an text color for selected row on performace dragable items
+* @author : Esteban E.
+* @since October 27 of 2015
+* @paradiso
+*/
+tr.selected td {
+	background-color: #036ca5 !important;
+	color: #ffffff;
+}
+
+/**
+* @Ability for set course format in course wizard feature - Set the radio color
+* @author Andres Ag
+* @since Nov 03 of 2015
+* @paradiso
+*/
+.form-radio.form-icon.form-plms-color:after {
+	color: #036ca5;
+}
+
+/*
+* @description : backgroud color an text color for selected row on performace dragable items
+* @author : Esteban E.
+* @since October 27 of 2015
+* @paradiso
+*/
+tr.selected td {
+	background-color: #036ca5 !important;
+	color: #ffffff;
+}
+
+.tabtree .tabrow0 li.active a {
+   	background-color: #8A8A8A !important;
+}
+
+.tabtree .tabrow0 li.active a:hover {
+
+    color: #ffffff;
+}
+
+/*
+* @description : Loading add elements on performace color
+* @author : Esteban E.
+* @since November 03 of 2015
+* @paradiso
+*/
+
+i.spinner_color
+{
+	color:#036ca5 !important;
+}
+
+/*
+* @description : inner option panel background color with 0.09 of alpha
+* @author : Esteban E.
+* @since November 03 of 2015
+* @paradiso
+*/
+
+.deepsight_actionpanel_inner
+{
+	background-color: rgba(3,108,165,0.09 );
+}
+
+/*
+* @description : inner option panel background color in hover
+* @author : Esteban E.
+* @since November 03 of 2015
+* @paradiso
+*/
+
+.deepsight_actionpanel tr td:hover
+{
+	background-color: none !important;
+}
+.deepsight_actionpanel:hover
+{
+	background-color: none !important;
+}
+.deepsight_actionpanel_inner:hover
+{
+	background-color: rgba(3,108,165,0.09 ) !important;
+}
+
+/**
+* @description  color for elis icons on hover and normal state
+* @author Esteban E.
+* @since Nov 10 2015
+* @paradiso
+*/
+tr.selected td.actions span a[class*="elisicon-"]
+{
+	color: #ffffff !important;
+}
+tr.selected td.actions span a[class*="elisicon-"]:hover
+{
+	color: #ffffff !important;
+}
+tr.selected td.actions span i[class*="elisicon-"]:hover
+{
+	color: #ffffff !important;
+}
+
+tr td.actions span a[class*="elisicon-"]:hover
+{
+	color: #ffffff !important;
+}
+tr td.actions span i[class*="elisicon-"]:hover
+{
+	color: #ffffff !important;
+}
+
+
+.form-checkbox.form-normal.form-plms.active:before {
+	background-color: #036ca5;
+    border-color: #036ca5;
+}
+
+#edit-plugin-form .ms-container:before,
+#edit-plugin-form .ms-container:after {
+	color: #036ca5;
+}
+
+/**
+* @description  Border for drag element on performace
+* @author Esteban E.
+* @since Nov 12 2015
+* @paradiso
+*/
+table tr.sorting-row
+{
+	border-left:4px solid #036ca5 ;
+}
+
+/**
+* @description  Elis widget LP title color
+* @author Esteban E.
+* @since Nov 20 2015
+* @paradiso
+*/
+.eliswidget_enrolment .program > .header
+{
+	color: #ffffff !important ;
+}
+
+.eliswidget_enrolment .course .header .header_required {
+	background-color: #036ca5;
+	color:#ffffff;
+
+}
+
+.tabs_performance .tabtree .tabrow0 li.active a {
+   	background-color: #8A8A8A !important;
+   	color: #ffffff}
+
+.tabs_performance .tabtree .tabrow0 li.active a:hover {
+
+    color: #ffffff;
+}
+
+/*
+* Background and text color for buttons on course
+* @author Esteban E.
+* @since Dic 14 of 2015
+* @paradiso
+*/
+.basic-color-and-text
+{
+	background-color: #036ca5 !important;
+	color: #ffffff !important;
+}
+
+
+/**
+* Styles for the frontpage of student
+* @author Andres Ag.
+* @since Div 22 of 2015
+* @paradiso
+*/
+#student-frontpage h4 {
+    color: #036ca5;
+}
+
+.student-frontpage-icon {
+    background-color: #036ca5;
+}
+
+.student-frontpage-icon i {
+	color: #fff;
+}
+
+.border-radius-coursewizard-check
+{
+		border:2px #036ca5 solid ;
+		border-radius:10px;
+		overflow: hidden;
+}
+.course-wizard-text-lable .form-plms-color span
+{
+  color: #036ca5;
+	float: left;
+ }
+ .triangle-class-check-course-wizard
+ {
+	 	width: 0;
+    height: 0;
+    border-bottom: 60px solid transparent;
+    border-right: 60px solid #036ca5;
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    left: 82%;
+ }
+
+ /**
+ * Change color of links in course admin menu (#settingsnav)
+ * @author Andres Ag.
+ * @since Feb 12th of 2016
+ * @paradiso
+ */
+#settingsnav a, #settingsnav span {
+    color: #000000;
+}

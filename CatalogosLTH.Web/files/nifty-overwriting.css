@@ -1,0 +1,550 @@
+/* Fix z-index and the */
+#mainnav-container {
+    padding-top: 0px !important;
+    z-index: 10 !important;
+}
+
+/* Fix the position of custom navigation*/
+#container.mainnav-fixed #mainnav #block-plms-cm.nano-content {
+	position: static !important;
+	margin-right: -15px;
+}
+
+/*Overwriging padding of links in the main navigation (custom navigation) */
+#mainnav-menu a {
+	padding: 5px 10px 5px 5px;
+}
+
+#mainnav-menu a, #mainnav-menu .menu-title, #mainnav-menu .arrow {
+	transition: all 0.5s ease-in-out;
+}
+
+#mainnav-menu i {
+	padding: 0px !important;
+}
+
+#container.mainnav-sm #mainnav-menu a {
+	padding: 5px 0px !important;
+}
+
+#mainnav li .arrow {
+	line-height: 25px;
+}
+
+#mainnav-menu>.active {
+	background: transparent;
+}
+
+#container.mainnav-sm #mainnav-menu a:hover, #mainnav-menu>li>a.hover {
+	box-shadow: inset 0px 0 0 0 #2986b8;
+}
+
+
+.performance-table th.header{vertical-align:middle;text-indent:20px;background-color:#fff}
+table.performance-table > tbody > tr:nth-of-type(even){background-color:#fff;}
+table.performance-table tbody tr td.c0{text-align:center;width:70px;}
+table.performance-table > thead > tr > th,
+table.performance-table > tbody > tr > th,
+table.performance-table > tfoot > tr > th,
+table.performance-table > thead > tr > td,
+table.performance-table > tbody > tr > td,
+table.performance-table > tfoot > tr > td{
+vertical-align:middle;
+}
+table.performance-table > tbody > tr > td{
+padding:0px !important;
+padding-left:5px !important;
+padding-right:5px !important;
+}
+
+table.performance-table>thead>tr>th,
+table.performance-table>tbody>tr>th,
+table.performance-table>tfoot>tr>th,
+table.performance-table>thead>tr>td,
+table.performance-table>tbody>tr>td,
+table.performance-table>tfoot>tr>td{
+height: 35px !important;
+}
+ul.dropdown-menu{text-align:left;background-color:#000}
+ul.dropdown-menu li a{color:#fff}
+.alpha-filter div{text-align:left !important;}
+.alpha-filter div a{margin-left:5px;font-size:13px;}
+#page-content #region-main-wrap #region-main .region-content .performance-table{
+margin-top:20px !important;
+background-color: #f4f4f4 !important;
+}
+ul.pagination-paradiso{margin-top:5px;margin-bottom:5px;margin-right:15px}
+
+ul.columns-menu .form-checkbox > input[type="checkbox"], ul.columns-menu .form-radio > input[type="radio"],
+table.report-table .form-checkbox > input[type="checkbox"], table.report-table .form-radio > input[type="radio"] {
+    margin-left: -50px;
+    opacity: 0;
+    position: absolute !important;
+    visibility: hidden;
+    z-index: -1;
+}
+
+/**
+ * Fixed bug with some dropdown menus no open
+ *
+ * @author Andres
+ * @since 2015
+ * @paradiso
+ */
+.plms-open-fix > .dropdown-menu {
+	display: block;
+}
+
+
+/*-- MEDIA QUERYS --*/
+/*- Landscape phones and portrait tablets -*/
+@media (max-width: 767px) {
+	#mainnav-container{
+		left:-220px;
+	}
+	#arrowBut {
+		margin-right: 0px !important;
+		margin-top: 0px !important;
+	}
+}
+
+
+/**
+* Force the styles to show the right menu on screen with width < 768px
+* @author Miguel Posada.
+* @since 02/09/2015 - modified max - width to 768 . miguel posada 10/09/2015
+* @paradiso
+*/
+
+@media (max-width: 768px){
+#container #aside-container {
+    padding: 0;
+    background-color: #fff;
+    position: absolute;
+    width: 220px;
+    height: auto;
+	left: auto !important;
+    right: 0px !important;
+    top: 0;
+    bottom: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    visibility: hidden;
+    z-index: 3;
+   }
+
+
+}
+@media (max-width: 768px) {
+	#aside {
+    max-height: none;
+    padding-top: 50px;
+    visibility: visible;
+    background-color: #3c4d5e;
+    height: 100%
+    }
+}
+
+@media (max-width: 321px) {
+   .badge-container{
+    position: relative;
+    float: left;
+    }
+
+    .badge-container-left{
+    display:none !important;
+    }
+
+    #badge-table td {
+    width:0px !important;
+    padding-top:0px !important;
+    margin-top:0px !important;
+    }
+
+    .badge-area-details-container, .badge-area-icon {
+    padding-right: 5px;
+    padding-left: 18px;
+}
+}
+
+/**
+* Force the styles for show the container before the end of the load
+* @author Andres Ag.
+* @since 25/08/2015
+* @paradiso
+*/
+#container {
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+
+.modal-footer .btn{
+	margin-bottom: 0 !important;
+}
+
+.dropdown-menu > li > label{
+	padding:5px 10px;
+	width:99%;
+}
+
+ul.white-menu {
+    border: 1px solid #e9e9e9;
+    border-radius: 0;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.15);
+    font-size: 12px;
+    margin: 1px 0 0;
+    padding: 0;
+	background-color:#ffffff;
+}
+/**
+* validate show or hide left menu arrow buttons
+* @author Andres Ag.
+* @since 25/08/2015
+* @paradiso
+*/
+@media (min-width: 1006px) {
+ i#arrowButLeft {
+  display: block !important;
+ }
+}
+
+@media (max-width: 1005px) {
+ i#arrowButRight{
+  display: block !important;
+ }
+}
+
+/**
+* Media query styles of the marketing spots frontpage
+* @author Esteban E.
+* @since 18/09/2015
+* @paradiso
+*/
+
+/*-- MEDIA QUERYS --*/
+/*- Landscape phones and portrait tablets -*/
+@media (max-width: 767px) {
+    .ul-marketing-spots-lms li:first-child
+    {
+         width: 100%;
+        /*margin-right: 16px;*/
+        margin-bottom: 10px;
+
+    }
+    .ul-marketing-spots-lms li:nth-child(2)
+    {
+        width: 100%;
+
+    }
+
+    #page-content .row .col-xs-12 .panel.pad-all #views-types {
+    right: 4% !important;
+    top: 26px !important;;
+    }
+
+    #page-content .col-xs-12 .btn-linear {
+    margin-top: 26px;
+    float: left;
+    position: relative;
+    left: -34px;
+    }
+    #page-content .col-xs-12 .btn-grid {
+    margin-top: -35px;
+    float: right;
+    position: relative;
+    margin-right: 16px !important;
+    }
+}
+
+/*-- MEDIA QUERYS --*/
+@media (min-width: 992px) and (max-width: 1350px) {
+    .ul-marketing-spots-lms li
+    {
+        float: left;
+    }
+    .ul-marketing-spots-lms li:first-child
+    {
+        width: 100%;
+        margin-right: 10px;
+
+
+    }
+    .ul-marketing-spots-lms li:nth-child(2)
+    {
+        width: 100%;
+
+    }
+}
+
+/**
+* Media query styles of the slideshow indicators to hidde on phones
+* @author Esteban E.
+* @since 18/09/2015
+* @paradiso
+*/
+
+/*-- MEDIA QUERYS --*/
+/*- phones -*/
+
+@media (max-width: 400px) {
+    #carousel-indicators-lms
+    {
+        display: none;
+    }
+    .edit-paradisolms-slider-front
+    {
+        display: none;
+    }
+
+}
+
+/**
+* Media query styles of the next and prev buttons on slideshow
+* @author Esteban E.
+* @since 18/09/2015
+* @paradiso
+*/
+
+/*-- MEDIA QUERYS --*/
+/*- phones -*/
+
+@media (min-width: 400px) {
+    #paradisolmsfullCarousel .fa
+    {
+        font-size: 24pt !important ;
+    }
+}
+
+/**
+* Media query for buttons list on iomad_dashboard/index.php
+* @author Esteban E.
+* @since 24/09/2015
+* @paradiso
+*/
+
+/*-- MEDIA QUERYS --*/
+/*- phones -*/
+
+@media (max-width: 400px) {
+    .block_iomad_company_admin .tabrow0
+    {
+        text-align: left;
+    }
+    .block_iomad_company_admin .tabrow0 li
+    {
+        margin-bottom: 8px !important;
+        border: 1px solid transparent !important;
+        width: 100% !important;
+        text-align: center;
+    }
+   .block_iomad_company_admin .tabrow0 li a
+    {
+     width: 100% !important;
+     display: inline-block;
+     height: 42px !important;
+     z-index: 0 !important;
+    }
+    .block_iomad_company_admin .tabrow0 li a span
+    {
+        line-height: 0px !important;
+    }
+
+}
+
+
+@media (max-width: 465px) {
+    .block_iomad_reports div.iomadlink {
+        width: 32%;
+    }
+}
+/**
+* Media query to put padding top equal to 50px in all the platform
+* @author Esteban E.
+* @since 24/09/2015
+* @paradiso
+*/
+
+/*-- MEDIA QUERYS --*/
+/*- screen smaller than 777px -*/
+@media (max-width: 777px) {
+    #content-container
+    {
+        padding-top: 50px !important;
+    }
+
+}
+
+/**
+* Media query to put padding top to the label on creating course and width 100% on labels
+* @author Esteban E.
+* @since 25/09/2015
+* @paradiso
+*/
+
+/*-- MEDIA QUERYS --*/
+/*- screen smaller than 777px -*/
+@media (max-width: 700px) {
+    #drag-drop-element-course-lms #fitem_id_thumbnail_file .fitemtitle
+    {
+           width: 100% !important;
+    }
+    .mar-top-lms
+    {
+        margin-top: 15px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .ul-marketing-spots-lms li:first-child
+    {
+         width: 100%;
+        /*margin-right: 16px;*/
+        margin-bottom: 10px;
+
+    }
+}
+
+/**
+* Media query for reports zone
+* @author Esteban E.
+* @since 30/09/2015
+* @paradiso
+*/
+@media (max-width: 700px) {
+
+    .report-left-block-acordeon,.report-right-block-acordeon
+    {
+        width: 100% !important;
+    }
+    .report-left-block-acordeon,.first-report-element,.report-color-elements
+    {
+        padding-bottom: 15px;
+    }
+}
+@media (min-width: 550px) {
+
+    .report-left-block-acordeon,.first-report-element,.report-color-elements
+    {
+        padding-right: 15px;
+    }
+}
+@media (max-width: 550px) {
+
+    .report-left-block-acordeon,.first-report-element,.report-color-elements,.second-report-element ,.last-report-color-elements
+    {
+        width: 100% !important;
+        padding-bottom: 15px;
+    }
+}
+
+@media (min-width: 992px){
+    #page-content {
+        padding: 10px 20px 0 !important;
+    }
+}
+
+/**
+* Media query for course zone
+* @author jaime T.
+* @since 25/12/2015
+* @paradiso
+*/
+
+@media (max-width: 767px) {
+    #page-course-view-paradisotabs #page-content ul.paradisotabs li.section{
+    width: 100% !important;
+    left: 1px;
+    }
+ }
+
+
+@media (max-width: 321px) {
+   #page-course-view-paradisotabs #page-content ul.paradisotabs li.section{
+    width: 116% !important;
+    margin-top: 24px;
+    left: -18px;
+    }
+    .panel-heading {
+    height: 78px;
+
+    }
+}
+
+/**
+* Close Button Color in Modals
+* @author Andres Ariza.
+* @since 01/12/2015
+* @paradiso
+*/
+.modal-dialog .modal-header #closemodalbutton,
+.modal-dialog .modal-header #closemodalbutton .fa{
+    color:#515151 !important;
+}
+/*
+* @description; Styles for made left menu looks like the mockup ( http://prntscr.com/978nn1 )
+* @author Esteban E.
+* @since Dic 10 of 2015
+* @paradiso
+*/
+
+@media (min-width: 768px){
+
+#container.mainnav-sm #mainnav-container, #container.mainnav-sm #navbar .navbar-brand {
+    width: 70px !important;
+
+}
+    #container.mainnav-sm #mainnav-container div#mainnav #plms-region-pre div.region-content #mainnav-menu-wrap #block-plms-cm ul#mainnav-menu li a
+    {
+     text-align: center !important;
+    }
+    #container.mainnav-sm #mainnav-container div#mainnav #plms-region-pre div.region-content #mainnav-menu-wrap #block-plms-cm ul#mainnav-menu li a .icon
+    {
+     margin-left: 20px;
+    }
+}
+
+
+#container.mainnav-lg .sub-title-menu-elements ,#container.mainnav-in .sub-title-menu-elements
+{
+    display:none;
+}
+#container.mainnav-sm .sub-title-menu-elements
+{
+    display:block;
+}
+
+#mainnav-menu-wrap #block-plms-cm #mainnav-menu i.arrow {
+    position: relative;
+}
+.sub-title-menu-elements
+{
+    text-transform: capitalize;font-size: 0.6em;margin-top:3px
+}
+.popover.menu-popover.right.in
+{
+    left:70px !important;
+}
+.popover.menu-popover.right.in .single-content
+{
+    height: 50px !important;
+    line-height: 25px;
+}
+
+@media (min-width:768px) {
+    #container.mainnav-sm #content-container, #container.mainnav-sm #footer {
+        padding-left:70px !important;
+        left:0
+    }
+
+}
+
+/**
+* Fix the height of the form inputs
+* @author Andres Ag.
+* @since January 18 of 2016
+* @paradiso
+*/
+.form-control {
+  height: auto;
+}

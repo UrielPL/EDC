@@ -1,0 +1,133 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ActMaster.master.cs" Inherits="CatalogosLTH.Web.ActMaster" %>
+
+<%@ Register Assembly="DevExpress.Dashboard.v22.1.Web.WebForms, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.DashboardWeb" TagPrefix="dx" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <script src="/lib/jquery/dist/jquery.js"></script>
+        <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/js/site.js" asp-append-version="true"></script>
+        <!--<script src="/datatables/media/js/jquery.dataTables.min.js"></script>
+        <script src="/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+       <script src="js/sb-admin-2.js"></script>
+        <script src="/metisMenu/dist/metisMenu.min.js"></script>
+     <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+        </script>
+        <script src="/js/site.min.js" asp-append-version="true"></script>-->
+   
+        <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <!--<link rel="stylesheet" href="/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" />
+        <link rel="stylesheet" href="/datatables-responsive/css/dataTables.responsive.css" />-->
+        <link rel="stylesheet" href="/font-awesome/css/font-awesome.css" type="text/css" />
+        <link rel="stylesheet" href="/metisMenu/dist/metisMenu.css" />
+    <title></title>
+    <asp:ContentPlaceHolder  id="head" runat="server">
+    </asp:ContentPlaceHolder>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
+    <link rel="stylesheet" href=" https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+   
+</head>
+<body>
+    <form runat="server" id="form1">
+        <asp:ScriptManager runat="server">
+           
+        </asp:ScriptManager>
+
+         <div id="wrapper">
+
+        <!-- Navigation -->
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.php">LTH</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li>
+                            <a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Index"> <i class="fa fa-home fa-fw"></i> Home</a></li>
+
+                        <li><a asp-area="" asp-controller="Home" asp-action="Index"> <i class="fa fa-lock fa-fw"></i> Auditorias Cerradas</a></li>
+
+                        <li><a asp-area="" asp-controller="Home" asp-action="Index"> <i class="fa fa-clock-o fa-fw"></i> Actividades a Caducar</a></li>
+
+
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+    </div>
+    <div id="page-wrapper">
+        <br />
+        <br />
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            
+        <hr />
+        <footer>
+            <p>&copy; 2016 - lthcore</p>
+        </footer>
+    </div>
+
+    
+       
+
+
+   
+    </form>
+</body>
+</html>
+
+
+

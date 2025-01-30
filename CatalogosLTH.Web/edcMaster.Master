@@ -1,0 +1,524 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="edcMaster.master.cs" Inherits="CatalogosLTH.Web.edcMaster" %>
+
+<!DOCTYPE html>
+<html dir="ltr" lang="es-mx" xml:lang="es-mx" class="yui3-js-enabled">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800,800i|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,900i" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7703213f1e.js" crossorigin="anonymous"></script>
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="UTF-8">
+    <title>EDC</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="js/jquery.bxslider/jquery.bxslider.css" />
+    <link rel="stylesheet" href="js/jquery.owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="js/jquery.owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="js/jquery.fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/slicknav.css" />
+    <link href="files/custom.css" rel="stylesheet" />
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.owl-carousel/owl.carousel.js"></script>
+    <script src="js/jquery.fancybox/jquery.fancybox.pack.js"></script>
+    <script src="js/master.js"></script>
+
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+    <link rel="stylesheet" href=" https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+    <style>
+        .slicknav_nav a {
+            padding: 2px 8px;
+        }
+
+        .slicknav_nav {
+            overflow-y: auto;
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <%
+        string url = HttpContext.Current.Request.Url.AbsolutePath;
+        string permiso = ViewState["permiso"] as string;
+        string usuario = ViewState["nombreUsuario"] as string;
+        string rol = ViewState["rol"] as string;
+    %><div id="menu" style="height: 100vh; overflow-y: auto;">
+        MENU
+						<ul style="padding-top: 8rem; overflow-y:auto;">
+                            <li>
+                                <a target="" href="mainpage.aspx" <%if (url.Contains("mainpage"))
+                                    { %>class="active-item"
+                                    <%}%>>
+                                    <span class="icon" title=""><i class="fa fa-home"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">INICIO</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+
+                            <h4 style="color: black;">EDC-III</h4>
+
+
+                            <% if (permiso == "Admin" || usuario == "alonso.sierra.siller@clarios.com" || permiso == "GerenteCuenta" || permiso == "Evaluador")
+                                {%>
+                            <li>
+                                <a target="" href="AuditoriasNuevas.aspx" <%if (url.Contains("AuditoriasNuevas"))
+                                    { %>class="active-item"
+                                    <%}%>>
+                                    <span class="icon" title=""><i class="fa fa-file"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">CREAR AUDITORIA EDC-III</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <%} %>
+                             <% if (permiso == "Admin" || usuario == "DAJASA")
+                                {%>
+                            <li>
+                                <a target="" href="AuditoriaLubricantes.aspx" <%if (url.Contains("AuditoriaLubricantes"))
+                                    { %>class="active-item"
+                                    <%}%>>
+                                    <span class="icon" title=""><i class="fa fa-file"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">CREAR AUDITORIA LUBRICANTES EDC-III</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <%} %>
+                            <%if (permiso == "Distribuidor")
+                                { %>
+                            <li>
+                                <a target="" href="AuditoriasNuevas.aspx" <%if (url.Contains("AuditoriasNuevas"))
+                                    { %>class="active-item"
+                                    <%}%>>
+                                    <span class="icon" title=""><i class="fa fa-file"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">CREAR AUTO AUDITORIA EDC-III</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <%} %>
+                            <%if (permiso == "GerenteCuenta")
+                                { %>
+                            <li>
+                                <a target="" href="AuditoriasNuevas.aspx?a=true" <%if (url.Contains("AuditoriasNuevas"))
+                                    { %>class="active-item"
+                                    <%}%>>
+                                    <span class="icon" title=""><i class="fa fa-file"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">CREAR AUTO AUDITORIA EDC-III</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+
+                            <%} %>
+                            <%--<%if (permiso != "Evaluador" && permiso != "Distribuidor" || usuario == "alonso.sierra.siller@clarios.com")
+                                {%>
+                            <li>
+                                <a target="" class="img-circle img-menu" href="NuevoNivel.aspx" <%if (url.Contains("NuevoNivel"))
+                                    { %>class="active-item"
+                                    <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-bar-chart"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">CONSULTAR NIVEL EDC-III</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <%}--%>
+                                <%if (permiso == "Distribuidor" || permiso == "GerenteCuenta" || permiso == "Admin" || permiso == "Evaluador")
+                                {%>
+                            <li>
+                                <a target="" class="img-circle img-menu" href="HistorialAuditorias.aspx" <%if (url.Contains("HistorialAuditorias"))
+                                    { %>class="active-item"
+                                    <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-bar-chart"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">CONSULTAR NIVEL EDC-III</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <%} %>
+                            <%if (permiso != "Evaluador" || usuario == "alonso.sierra.siller@clarios.com")
+                                {%>
+                            <li>
+                                <a target="" href="listactividades.aspx" <%if (url.Contains("listactividades"))
+                                    { %>class="active-item"
+                                    <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-list-alt"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">PLAN DE NEGOCIO EDC-III</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <%}%>
+                            <%if (permiso == "Distribuidor" || permiso == "GerenteCuenta" || permiso == "Admin")
+                                {%>
+                            <li>
+                                <a target="" href="scorecard.aspx" <%if (url.Contains("scorecard"))
+                                    { %>class="active-item"
+                                    <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-list-alt"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">SCORECARD EDC-III</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <%}%>
+                            <li>
+                                <a target="" href="historialtablafinanciera.aspx" <%if (url.Contains("historialtablafinanciera"))
+                                    { %>class="active-item"
+                                    <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-table"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">TABLA FINANCIERA</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <%if (permiso != "Distribuidor")
+                                { %>
+                            <li>
+                                <a target="" href="ActividadesPorRevisar.aspx" <%if (url.Contains("actividadesporrevisar"))
+                                    { %>class="active-item"
+                                    <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-check"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">ACTIVIDADES A REVISAR EDC-III</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <%} %>
+                            <%if (permiso != "")
+                                { %>
+                            <li>
+                                <a target="" href="Actividades-Completadas.aspx" <%if (url.Contains("actividadescompletadas"))
+                                    { %>class="active-item"
+                                    <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-check"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">ACTIVIDADES COMPLETADAS EDC-III</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <%} %>
+                            <li>
+                                <a target="" href="ProyectoDesarrollo.aspx" <%if (url.Contains("proyectodesarrollo"))
+                                    { %>class="active-item"
+                                    <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-check"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">PROYECTO DESARROLLO EDC-III</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+
+
+                            <h4 style="color: black;">EDC-II</h4>
+
+
+                            <%if (permiso == "Admin" || usuario == "alonso.sierra.siller@clarios.com" || permiso == "GerenteCuenta")
+                                {
+                            %>
+                            <li>
+                                <a target="" href="newAuditoria.aspx" <%if (url.Contains("newAuditoria"))
+                                    { %>class="active-item"
+                                    <%}%>>
+                                    <span class="icon" title=""><i class="fa fa-file"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">CREAR AUDITORIA</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <%
+                                }
+                            %>
+
+                            <%--                            <%if (permiso == "Distribuidor")
+                                { %>
+                            <li>
+                                <a target="" href="AuditoriasNuevas.aspx" <%if (url.Contains("AuditoriasNuevas"))
+                                    { %>class="active-item" <%}%>>
+                                    <span class="icon" title=""><i class="fa fa-file"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">CREAR AUTO AUDITORIA</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <br />
+                            <%} %>
+
+                            <%if (permiso == "GerenteCuenta")
+                                { %>
+                            <li>
+                                <a target="" href="AuditoriasNuevas.aspx?a=true" <%if (url.Contains("AuditoriasNuevas"))
+                                    { %>class="active-item" <%}%>>
+                                    <span class="icon" title=""><i class="fa fa-file"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">CREAR AUTO AUDITORIA</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+
+                            <%} %>--%>
+                            <%if (permiso != "Evaluador" || usuario == "alonso.sierra.siller@clarios.com")
+                                {%>
+                            <li>
+                                <a target="" class="img-circle img-menu" href="NivelDistribuidor.aspx" <%if (url.Contains("NivelDistribuidor"))
+                                    { %>class="active-item"
+                                    <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-bar-chart"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">CONSULTAR NIVEL</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <%}%>
+                            <%--<%if (permiso != "Evaluador" || usuario == "alonso.sierra.siller@clarios.com")
+                                {%>
+                            <li>
+                                <a target="" class="img-circle img-menu" href="NuevoNivel.aspx" <%if (url.Contains("NuevoNivel"))
+                                    { %>class="active-item" <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-bar-chart"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">CONSULTAR Nuevo NIVEL</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <%}%>--%>
+                            <%if (permiso != "Evaluador" || usuario == "alonso.sierra.siller@clarios.com")
+                                {%>
+                            <li>
+                                <a target="" href="listaactividades.aspx" <%if (url.Contains("listaactividades"))
+                                    { %>class="active-item"
+                                    <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-list-alt"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">PLAN DE NEGOCIO</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <%--<li>
+                                <a target="" href="listactividades.aspx" <%if (url.Contains("listactividades"))
+                                    { %>class="active-item" <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-list-alt"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">Nuevo PLAN DE NEGOCIO</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>--%>
+                            <%}%>
+                            <!--DCADMIN-->
+                            <%if (rol != "DCAdmin")
+                                { %>
+                            <li>
+                                <a target="" href="catalogoactividades.aspx" <%if (url.Contains("catalogoactividades"))
+                                    { %>class="active-item"
+                                    <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-book"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">BIBLIOTECA DE ACTIVIDADES</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="" href="ActividadesCompletadas.aspx" <%if (url.Contains("ActividadesCompletadas"))
+                                    { %>class="active-item"
+                                    <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-check-square-o"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">ACTIVIDADES COMPLETADAS</span><div class="sub-title-menu-elements"></div>
+                                </a>
+
+                            </li>
+                            <%if ((permiso != "Evaluador" && permiso != "GerenteCuenta" && permiso != "GerenteDesarrolloComercial" && permiso != "GerenteVenta" && permiso != "DirectorGeneral") || usuario == "alonso.sierra.siller@clarios.com")
+                                {%>
+                            <li>
+                                <a target="" href="catalogoauditorias.aspx" <%if (url.Contains("catalogoauditorias"))
+                                    { %>class="active-item"
+                                    <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-table"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">CATALOGO AUDITORIAS</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <%}%>
+                            <%if ((permiso != "Distribuidor" && permiso != "GerenteVenta" && permiso != "DirectorGeneral") || usuario == "alonso.sierra.siller@clarios.com")
+                                {%>
+                            <li>
+                                <a target="" href="actividadesrevisar.aspx" <%if (url.Contains("actividadesrevisar"))
+                                    { %>class="active-item"
+                                    <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-check"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">ACTIVIDADES A REVISAR</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <%} %>
+
+                            <!--END DC ADMIN-->
+                            <%} %>
+                            <li>
+                                <a target="" href="Tablero1.aspx" <%if (url.Contains("Tablero1"))
+                                    { %>class="active-item"
+                                    <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-clipboard"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">REPORTES</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <!--DCADMIN-->
+                            <%if (rol != "DCAdmin")
+                                { %>
+                            <li>
+                                <a target="" href="cargaventa.aspx" <%if (url.Contains("cargaventa"))
+                                    { %>class="active-item"
+                                    <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-line-chart"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">VENTAS DIARIAS</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <% if (permiso == "GerenteVenta" || permiso == "GerenteCuenta" || permiso == "Admin" || permiso == "GerenteDesarrolloComercial")
+                                { %>
+                            <li>
+                                <a href="MinutasIndex.aspx" <%if (url.Contains("Minutas"))
+                                    { %>class="active-item"
+                                    <% }%>>
+                                    <span class="icon"><i class="fa fa-clipboard"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">MINUTAS DE GERENTE DE CUENTA</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            <% } %>
+
+                            <li>
+                                <%
+                                    string u = ViewState["u"].ToString();
+                                    string token = ViewState["token"].ToString();
+
+                                    string uEncoded = Server.UrlEncode(u);
+                                    string tokenEncoded = Server.UrlEncode(token);
+
+                                    //  string autourl = "http://45.32.4.194/autoauditoria/authform.aspx?u="+uEncoded+"&token="+tokenEncoded;autoAuditTest
+                                    string autourl = "http://dev.outputcc.com/autoauditoria/authform.aspx?u=" + uEncoded + "&token=" + tokenEncoded;
+                                    //string autourl = "http://dev.outputcc.com/autoAuditTest/authform.aspx?u=" + uEncoded + "&token=" + tokenEncoded;
+
+                                %>
+                                <%//if (permiso == "Admin")
+//      {
+                                %>
+                                <%--<a target="_blank" href="<%:autourl%>" <%if (url.Contains("Tablero1"))
+    { %>class="active-item" <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-external-link"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">AUTO AUDITORIA</span><div class="sub-title-menu-elements"></div>
+                                </a>--%>
+                                <%//} %>
+
+                                <%if (permiso != "Distribuidor")
+                                    {%>
+                                <a target="" href="EvaluacionMovil.aspx" <%if (url.Contains("EvaluacionMovil"))
+                                    { %>class="active-item"
+                                    <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-external-link"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">AUDITORIA MOVIL</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                                <%} %>
+                                <%if (permiso == "Admin" || usuario == "alonso.sierra.siller@clarios.com")
+                                    {%>
+                                <a target="" href="ListaGeneralAuditoriaMovil.aspx" <%if (url.Contains("ListaGeneralAuditoriaMovil"))
+                                    { %>class="active-item"
+                                    <% }%>>
+                                    <span class="icon" title=""><i class="fa fa-external-link"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">AUTORIZA AUDITORIA MOVIL</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                                <%} %>
+                            </li>
+
+                            <li>
+                                <% string nuevaurl2 = "http://dev.outputcc.com/VentasEDC/IndexVentas.aspx?token=" + ViewState["token2"]; %>
+                                <a target="_blank" href="<%:nuevaurl2%>">
+                                    <span class="icon" title=""><i class="fa fa-bell"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">EDC VENTAS</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+                            mo
+                            	<li>
+                                    <a target="" href="categorias.aspx" <%if (url.Contains("categorias"))
+                                        { %>class="active-item"
+                                        <% }%>>
+                                        <span class="icon" title=""><i class="fa fa-table"></i><span class="vertical-align"></span></span>
+                                        <span class="menu-title">DOCUMENTOS RELACIONADOS</span><div class="sub-title-menu-elements"></div>
+                                    </a>
+                                </li>
+                            <%
+                                string nuevaurl = "http://dev.outputcc.com/auditorianueva/authform.aspx?u=" + uEncoded + "&token=" + uEncoded; %>
+                            <li>
+                                <a target="_blank" href="<%:nuevaurl%>">
+                                    <span class="icon" title=""><i class="fa fa-bell"></i><span class="vertical-align"></span></span>
+                                    <span class="menu-title">NUEVO EDC</span><div class="sub-title-menu-elements"></div>
+                                </a>
+                            </li>
+
+
+                            <!--END DC ADMIN-->
+                            <%} %>
+                        </ul>
+    </div>
+    <!-- end menu-->
+    <div class="section header bg white fixed shadow">
+        <%
+            string nombre = ViewState["nombreUsuario"] as string;
+
+        %>
+        <div class="container">
+            <div class="row">
+                <div class="logo" align="center">
+                    <a href="mainpage.aspx">
+                        <img src="img/EDCnuevo.png" class="u-max-full-width" />
+                    </a>
+                </div>
+                <div class="info">
+                    <!--	<span style="display:inline-block;" class="no-mobile">Modo Edición</span>
+						<label class="switch" style="display:inline-block;">
+							<input type="checkbox">
+							<div class="slider round"></div>
+						</label>&nbsp;&nbsp;
+						<img src="img/usuario.png" class="u-max-full-width" />-->
+                    <!--<a id="user" runat="server" href="#" title="Ver perfil" onserverclick="salir" style="color:black"> <i class="fa fa-sign-out " aria-hidden="true" style="color:black" >(CERRAR SESIÓN) &nbsp;</i><%:ViewState["nombreUsuario"].ToString() %></a>-->
+                    <span style="display: inline-block; align-items: flex-end" class="no-mobile"><a id="iduser" runat="server" onserverclick="salir" style="font-weight: 100; font-size: 14px">(CERRAR SESIÓN) &nbsp;</i><%:ViewState["nombreUsuario"].ToString() %>  </a><span class="fa fa-sign-out" style="display: inline-block;"></span></span>
+                </div>
+                <div>
+                    <%if (nombre.ToLower().Contains("alonso.sierra"))
+                        { %>
+                    <a target="_blank" href="Default.aspx" style="position: absolute; top: 3%; right: 5%;">Admin
+    									<span class="icon" title=""><i class="fa fa-archive"></i><span class="vertical-align"></span></span>
+
+                    </a><%} %>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENIDO  -->
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <!-- /CONTENIDO -->
+
+    <div class="section footer bg white-footer">
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <h3>EDC III</h3>
+                </div>
+                <div class="six columns">
+                    <img src="img/EDCnuevo.png" align="right" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;">
+        <div id="privacidad">
+            <h3>Aviso de Privacidad</h3>
+            <p>Su información personal será utilizada para proveer servicios y productos requeridos, informarle sobre nuevos productos, servicios o cambios en los mismos, mensajes promocionales y evaluar la calidad del servicio que le brindamos. Para las finalidades antes mencionadas, requerimos obtener los siguientes datos personales: Nombre, Apellidos, Teléfono, Correo electrónico; sin que ninguna de esta información sea considerada como Datos Sensibles en los términos señalados en la Fracción VI del Artículo 2do. De la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.</p>
+
+            <p>Usted tiene derecho de acceder, rectificar y cancelar sus datos personales, así como de oponerse al tratamiento de los mismos o revocar el consentimiento que para tal fin nos haya otorgado, a través de los procedimientos que hemos implementado. Para ejercerse derecho envíe su solicitud mediante una nota electrónica al correo info@hold.mx</p>
+
+            <p>Consiento y autorizo que mis datos personales sean tratados conforme a lo previsto en el presente aviso de privacidad.</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#menu').slicknav();
+        });
+
+
+    </script>
+
+
+</body>
+
+
+</html>

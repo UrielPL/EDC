@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Logo="Clarios_Logo_Primary_RGB">
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="mdl_Area_ListView" Index="0" />
+          <Item Id="mdl_auditoria_ListView" Index="1" />
+          <Item Id="mdl_auditoriaactividad_ListView" Index="2" />
+          <Item Id="mdl_audidet_ListView" Index="3" />
+          <Item Id="mdl_distribuidor_ListView" Index="4" />
+          <Item Id="mdl_RegistroMensual_ListView" Index="5" />
+          <Item Id="mdl_periodo_ListView" Index="6" />
+          <Item Id="PuestoPorDistribuidor_ListView" Index="7" />
+          <Item Id="ReglaEvaluacion_ListView" Index="8" />
+          <Item Id="Usuario_ListView" Index="9" />
+          <Item Id="ActividadUsuario_ListView" Index="10" />
+          <Item Id="@2c538a77-4ff9-4139-980f-b710276d4618" ViewId="Scorecards_ListView" ImageName="BO_Unknown" Caption="Scorecards" IsNewNode="True" />
+          <Item Id="AuditoriaMovilGeneral_ListView" Removed="True" />
+          <Item Id="CategoriaDocumento_ListView" Removed="True" />
+          <Item Id="Documento_ListView" Removed="True" />
+          <Item Id="mdl_AuditoriaMovil_ListView" Removed="True" />
+          <Item Id="mdl_zona_ListView" Removed="True" />
+          <Item Id="MyDetails" Removed="True" />
+          <Item Id="SecuritySystemRole_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="@cafac9a6-2aa3-43f2-8734-2cf822ae0a1d" Caption="Auditoría móvil" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="AuditoriaMovilGeneral_ListView" ViewId="AuditoriaMovilGeneral_ListView" ObjectKey="" Index="0" IsNewNode="True" />
+          <Item Id="mdl_AuditoriaMovil_ListView" ViewId="mdl_AuditoriaMovil_ListView" ObjectKey="" Index="1" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="@df4ad22d-b9f9-4b45-955b-ce21555dd211">
+        <Items>
+          <Item Id="CategoriaDocumento_ListView" ViewId="CategoriaDocumento_ListView" ObjectKey="" Index="0" IsNewNode="True" />
+          <Item Id="Documento_ListView" ViewId="Documento_ListView" ObjectKey="" Index="1" IsNewNode="True" />
+          <Item Id="mdl_actividad_ListView" Index="2" />
+          <Item Id="Archivos_ListView" Index="3" />
+          <Item Id="mdl_catnivel_ListView" Index="4" />
+          <Item Id="mdl_catpilar_ListView" Index="5" />
+          <Item Id="mdl_nivel_ListView" Index="6" />
+          <Item Id="mdl_pilar_ListView" Index="7" />
+          <Item Id="SecuritySystemRole_ListView" ViewId="SecuritySystemRole_ListView" ObjectKey="" Index="8" IsNewNode="True" />
+          <Item Id="mdl_pondnivel_ListView" Index="9" />
+          <Item Id="mdl_pondpilar_ListView" Index="10" />
+          <Item Id="mdl_punto_ListView" Index="11" />
+          <Item Id="mdl_tipoauditoria_ListView" Index="12" />
+          <Item Id="vwactacertadas_ListView" Index="13" />
+          <Item Id="vwactividad_ListView" Index="14" />
+          <Item Id="vwpuntostot_ListView" Index="15" />
+          <Item Id="vwtotal_ListView" Index="16" />
+          <Item Id="@d26fba50-0c7e-4e67-af40-31e2c22ff910" ViewId="mdl_Objetivos_ListView" Caption="ObjetivosMinutas" IsNewNode="True" />
+          <Item Id="@e0c1eaed-94b8-4a01-92c7-a853ce63fbed" ViewId="Minutas_ListView" IsNewNode="True" />
+          <Item Id="@f9e0742b-7755-4a27-b7b8-19f1b344b861" ViewId="mdl_MesesObjetivos_ListView" Caption="MesesObjetivos" IsNewNode="True" />
+          <Item Id="@fdb47e5e-7fde-44da-8263-954d48f32e5c" ViewId="mdl_DistribuidoresMinutas_ListView" IsNewNode="True" />
+          <Item Id="mdl_zona_ListView" ViewId="mdl_zona_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="MyDetails" ViewId="Usuario_DetailView" ObjectKey="@CurrentUserID" Caption="My Details" ImageName="BO_MyDetails" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="SystemAspNetModule" Version="22.1.3.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="22.1.3.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="ActividadUsuario_ListView">
+      <Columns>
+        <ColumnInfo Id="Fecha" SortIndex="0" SortOrder="Descending" />
+        <ColumnInfo Id="Hora" SortIndex="-1" SortOrder="None" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Documento_DetailView">
+      <Items>
+        <PropertyEditor Id="Descripcion" PropertyEditorType="DevExpress.ExpressApp.HtmlPropertyEditor.Web.ASPxHtmlPropertyEditor" />
+      </Items>
+    </DetailView>
+    <DetailView Id="mdl_actividad_DetailView">
+      <Items>
+        <PropertyEditor Id="Instruccion" PropertyEditorType="DevExpress.ExpressApp.HtmlPropertyEditor.Web.ASPxHtmlPropertyEditor" />
+      </Items>
+    </DetailView>
+    <ListView Id="mdl_Kardex_ListView">
+      <Columns>
+        <ColumnInfo Id="Distribuidor" SortIndex="0" SortOrder="Ascending" Index="1" />
+        <ColumnInfo Id="Profesionalizacion" Index="2" />
+        <ColumnInfo Id="ProfesionalizacionObjetivo" Index="3" />
+        <ColumnInfo Id="AvanceProf" Index="4" />
+        <ColumnInfo Id="ActTerminadas" Index="5" />
+        <ColumnInfo Id="ActObjetivo" Index="6" />
+        <ColumnInfo Id="AvanceAct" Index="7" />
+        <ColumnInfo Id="Cerrada" Index="8" />
+      </Columns>
+    </ListView>
+    <ListView Id="mdl_RegistroMensual_ListView">
+      <Columns>
+        <ColumnInfo Id="Distribuidor" Index="0" />
+        <ColumnInfo Id="Mes" Index="1" SortIndex="0" SortOrder="Ascending" />
+        <ColumnInfo Id="Periodo" Index="2" />
+        <ColumnInfo Id="resultado" Index="3" />
+        <ColumnInfo Id="ObjetivoProf" Index="4" />
+        <ColumnInfo Id="ObjetivoAct" SortIndex="-1" SortOrder="None" Index="5" />
+        <ColumnInfo Id="nivel" Index="6" />
+        <ColumnInfo Id="terminadas" Index="7" />
+        <ColumnInfo Id="orden" Index="8" />
+      </Columns>
+    </ListView>
+    <DetailView Id="NuevaAuditoria_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="33.670033670033668">
+            <LayoutGroup Id="NuevaAuditoria" RelativeSize="100">
+              <LayoutGroup Id="NuevaAuditoria_col1" RelativeSize="50">
+                <LayoutItem Id="Id" RelativeSize="20" />
+                <LayoutItem Id="Distribuidor" RelativeSize="15" />
+                <LayoutItem Id="Fecha" RelativeSize="15" />
+                <LayoutItem Id="calificacionTotal" ViewItem="calificacionTotal" Index="4" RelativeSize="15" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="calificacionFinal" ViewItem="calificacionFinal" Index="5" RelativeSize="20" IsNewNode="True" />
+                <LayoutItem Id="User_Apertura" RelativeSize="15" />
+              </LayoutGroup>
+              <LayoutGroup Id="NuevaAuditoria_col2" RelativeSize="50">
+                <LayoutItem Id="calificacionEjec" ViewItem="calificacionEjec" Index="0" RelativeSize="20" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="calificacionAdmin" Index="1" RelativeSize="15" ViewItem="calificacionAdmin" IsNewNode="True" />
+                <LayoutItem Id="calificacionInfra" Index="2" RelativeSize="15" />
+                <LayoutItem Id="calificacionPlan" Index="3" RelativeSize="15" />
+                <LayoutItem Id="calificacionFinal" Index="4" RelativeSize="35" Removed="True" />
+                <LayoutItem Id="calificacionPyS" Index="4" RelativeSize="35" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="66.329966329966325">
+            <LayoutGroup Id="NuevaAuditoriaDet" RelativeSize="100">
+              <LayoutItem Id="NuevaAuditoriaDet" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="NuevaAuditoriaAct" RelativeSize="100">
+              <LayoutItem Id="NuevaAuditoriaAct" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="NuevaAuditoria_ListView">
+      <Columns>
+        <ColumnInfo Id="Fecha" SortIndex="0" SortOrder="Descending" />
+      </Columns>
+    </ListView>
+    <ListView Id="NuevaAuditoria_NuevaAuditoriaDet_ListView">
+      <Columns>
+        <ColumnInfo Id="Comentarios" Index="3" />
+      </Columns>
+    </ListView>
+    <ListView Id="NuevaAuditoria_TablaFinancieraRes_ListView">
+      <Columns>
+        <ColumnInfo Id="realizo" Index="2" />
+        <ColumnInfo Id="distribuidor" Index="3" />
+        <ColumnInfo Id="distribuidorSel" Index="4" />
+        <ColumnInfo Id="u_bruta" Index="5" />
+        <ColumnInfo Id="v_netas" Index="6" />
+        <ColumnInfo Id="u_operativa" Index="7" />
+        <ColumnInfo Id="v_netas_" Index="8" />
+        <ColumnInfo Id="a_circ" Index="9" />
+        <ColumnInfo Id="pas_circ" Index="10" />
+        <ColumnInfo Id="a_circInv" Index="11" />
+        <ColumnInfo Id="pas_circInv" Index="12" />
+        <ColumnInfo Id="inventario_cv" Index="13" />
+        <ColumnInfo Id="dias_periodo" Index="14" />
+        <ColumnInfo Id="cxc" Index="15" />
+        <ColumnInfo Id="cxc_dp" Index="16" />
+        <ColumnInfo Id="cxp" Index="17" />
+        <ColumnInfo Id="cxp_dp" Index="18" />
+        <ColumnInfo Id="pasivo_tot" Index="19" />
+        <ColumnInfo Id="activo_tot" Index="20" />
+        <ColumnInfo Id="gast_oper" Index="21" />
+        <ColumnInfo Id="vts_netas" Index="22" />
+        <ColumnInfo Id="uti_oper" Index="23" />
+        <ColumnInfo Id="actTot_pasTot" Index="24" />
+      </Columns>
+    </ListView>
+    <ListView Id="Scorecards_ListView">
+      <Columns>
+        <ColumnInfo Id="OID" Index="0" />
+        <ColumnInfo Id="distribuidor" Index="1" />
+        <ColumnInfo Id="sc_autoauditoria" Index="2" />
+        <ColumnInfo Id="sc_auditoriaedc3" Index="3" />
+        <ColumnInfo Id="sc_tablafinanciera" Index="4" />
+        <ColumnInfo Id="sc_proyecto" Index="5" />
+        <ColumnInfo Id="sc_proyecto2" Index="6" />
+        <ColumnInfo Id="sc_proyecto3" Index="7" />
+        <ColumnInfo Id="scorecard" Index="8" />
+        <ColumnInfo Id="puntaje_final" Index="9" />
+      </Columns>
+    </ListView>
+    <DetailView Id="TablaFinancieraResultados_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="18.684603886397607">
+            <LayoutGroup Id="TablaFinancieraResultados" RelativeSize="100">
+              <LayoutGroup Id="TablaFinancieraResultados_col1" RelativeSize="50">
+                <LayoutItem Id="Id" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="fechaRealizada" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="a_circ" Index="2" RelativeSize="7.8947368421052628" Removed="True" />
+                <LayoutItem Id="a_circInv" Index="2" RelativeSize="7.8947368421052628" Removed="True" />
+                <LayoutItem Id="dias_periodo" Index="2" RelativeSize="7.8947368421052628" Removed="True" />
+                <LayoutItem Id="distribuidor" ViewItem="distribuidor" Index="2" RelativeSize="36.363636363636367" IsNewNode="True" />
+                <LayoutItem Id="inventario_cv" Index="2" RelativeSize="7.8947368421052628" Removed="True" />
+                <LayoutItem Id="pas_circ" Index="2" RelativeSize="7.8947368421052628" Removed="True" />
+                <LayoutItem Id="u_operativa" Index="2" RelativeSize="7.8947368421052628" Removed="True" />
+                <LayoutItem Id="v_netas" Index="2" RelativeSize="7.8947368421052628" Removed="True" />
+                <LayoutItem Id="v_netas_" Index="2" RelativeSize="7.8947368421052628" Removed="True" />
+                <LayoutItem Id="pas_circInv" Index="4" RelativeSize="7.8947368421052628" Removed="True" />
+                <LayoutItem Id="u_bruta" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="TablaFinancieraResultados_col2" RelativeSize="50">
+                <LayoutItem Id="activo_tot" RelativeSize="15.384615384615385" Index="0" Removed="True" />
+                <LayoutItem Id="actTot_pasTot" RelativeSize="28.571428571428573" Index="0" Removed="True" />
+                <LayoutItem Id="cxp" RelativeSize="11.428571428571429" Index="0" Removed="True" />
+                <LayoutItem Id="cxp_dp" RelativeSize="12.5" Index="0" Removed="True" />
+                <LayoutItem Id="gast_oper" RelativeSize="17.391304347826086" Index="0" Removed="True" />
+                <LayoutItem Id="IdAuditoria" RelativeSize="36.363636363636367" Index="0" />
+                <LayoutItem Id="pasivo_tot" RelativeSize="13.793103448275861" Index="0" Removed="True" />
+                <LayoutItem Id="uti_oper" RelativeSize="23.529411764705884" Index="0" Removed="True" />
+                <LayoutItem Id="vts_netas" RelativeSize="20" Index="0" Removed="True" />
+                <LayoutItem Id="realizo" RelativeSize="63.636363636363633" Index="1" />
+                <LayoutItem Id="distribuidor" RelativeSize="36.363636363636367" Index="2" Removed="True" />
+                <LayoutItem Id="cxc_dp" RelativeSize="10.526315789473685" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="81.31539611360239" Direction="Vertical" Caption="SizeableEditors">
+            <LayoutGroup Id="Auto5d5b5bb8-7f38-45ad-be1f-5a8084383eaf" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="99.816176470588232" IsNewNode="True">
+              <LayoutGroup Id="Autob9a9397f-5c11-4329-a90a-08e5434e86f4" ShowCaption="False" Caption="" Index="0" RelativeSize="50" IsNewNode="True">
+                <LayoutItem Id="u_bruta" ViewItem="u_bruta" Index="0" RelativeSize="4.972375690607735" IsNewNode="True" />
+                <LayoutItem Id="v_netas" ViewItem="v_netas" Index="1" RelativeSize="5.5248618784530388" IsNewNode="True" />
+                <LayoutItem Id="u_operativa" ViewItem="u_operativa" Index="2" RelativeSize="4.4198895027624312" IsNewNode="True" />
+                <LayoutItem Id="v_netas_" ViewItem="v_netas_" Index="3" RelativeSize="5.5248618784530388" IsNewNode="True" />
+                <LayoutItem Id="a_circInv" ViewItem="a_circInv" Index="4" RelativeSize="4.4198895027624312" IsNewNode="True" />
+                <LayoutItem Id="pas_circInv" ViewItem="pas_circInv" Index="5" RelativeSize="5.5248618784530388" IsNewNode="True" />
+                <LayoutItem Id="a_circ" ViewItem="a_circ" Index="6" RelativeSize="4.4198895027624312" IsNewNode="True" />
+                <LayoutItem Id="pas_circ" ViewItem="pas_circ" Index="7" RelativeSize="5.5248618784530388" IsNewNode="True" />
+                <LayoutItem Id="inventario_cv" ViewItem="inventario_cv" Index="8" RelativeSize="4.4198895027624312" IsNewNode="True" />
+                <LayoutItem Id="dias_periodo" ViewItem="dias_periodo" Index="9" RelativeSize="5.5248618784530388" IsNewNode="True" />
+                <LayoutItem Id="cxc" ViewItem="cxc" Index="10" RelativeSize="4.4198895027624312" IsNewNode="True" />
+                <LayoutItem Id="cxc_dp" ViewItem="cxc_dp" Index="11" RelativeSize="5.5248618784530388" IsNewNode="True" />
+                <LayoutItem Id="cxp" ViewItem="cxp" Index="12" RelativeSize="4.4198895027624312" IsNewNode="True" />
+                <LayoutItem Id="cxp_dp" ViewItem="cxp_dp" Index="13" RelativeSize="5.5248618784530388" IsNewNode="True" />
+                <LayoutItem Id="pasivo_tot" ViewItem="pasivo_tot" Index="14" RelativeSize="4.4198895027624312" IsNewNode="True" />
+                <LayoutItem Id="activo_tot" ViewItem="activo_tot" Index="15" RelativeSize="5.5248618784530388" IsNewNode="True" />
+                <LayoutItem Id="gast_oper" ViewItem="gast_oper" Index="16" RelativeSize="4.4198895027624312" IsNewNode="True" />
+                <LayoutItem Id="vts_netas" ViewItem="vts_netas" Index="17" RelativeSize="5.5248618784530388" IsNewNode="True" />
+                <LayoutItem Id="uti_oper" ViewItem="uti_oper" Index="18" RelativeSize="4.4198895027624312" IsNewNode="True" />
+                <LayoutItem Id="actTot_pasTot" ViewItem="actTot_pasTot" Index="19" RelativeSize="5.5248618784530388" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Autofd98bdc7-2076-41e3-bc4d-3f22af7eefe5" ShowCaption="False" Caption="" Index="1" RelativeSize="50" IsNewNode="True">
+                <LayoutItem Id="respuestaMUB" ViewItem="respuestaMUB" Index="0" RelativeSize="10.497237569060774" IsNewNode="True" />
+                <LayoutItem Id="respuestaMUO" ViewItem="respuestaMUO" Index="1" RelativeSize="9.94475138121547" IsNewNode="True" />
+                <LayoutItem Id="respuestaLRR" ViewItem="respuestaLRR" Index="2" RelativeSize="9.94475138121547" IsNewNode="True" />
+                <LayoutItem Id="respuestaLRC" ViewItem="respuestaLRC" Index="3" RelativeSize="9.94475138121547" IsNewNode="True" />
+                <LayoutItem Id="respuestaRI" ViewItem="respuestaRI" Index="4" RelativeSize="9.94475138121547" IsNewNode="True" />
+                <LayoutItem Id="respuestaPPC" ViewItem="respuestaPPC" Index="5" RelativeSize="9.94475138121547" IsNewNode="True" />
+                <LayoutItem Id="respuestaPPP" ViewItem="respuestaPPP" Index="6" RelativeSize="9.94475138121547" IsNewNode="True" />
+                <LayoutItem Id="respuestaE" ViewItem="respuestaE" Index="7" RelativeSize="9.94475138121547" IsNewNode="True" />
+                <LayoutItem Id="respuestaGO" ViewItem="respuestaGO" Index="8" RelativeSize="9.94475138121547" IsNewNode="True" />
+                <LayoutItem Id="respuestaRAO" ViewItem="respuestaRAO" Index="9" RelativeSize="9.94475138121547" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutItem Id="respuestaMUB" ViewItem="respuestaMUB" Index="0" RelativeSize="10.233393177737881" Removed="True" />
+            <LayoutItem Id="areaGO" RelativeSize="7.5736325385694245" Index="1" Removed="True" />
+            <LayoutItem Id="areaLRC" RelativeSize="5.4933875890132251" Index="1" Removed="True" />
+            <LayoutItem Id="areaLRR" RelativeSize="5.2073288331726131" Index="1" Removed="True" />
+            <LayoutItem Id="areaPPC" RelativeSize="6.1714285714285717" Index="1" Removed="True" />
+            <LayoutItem Id="areaPPP" RelativeSize="6.577344701583435" Index="1" Removed="True" />
+            <LayoutItem Id="areaRAO" RelativeSize="8.19423368740516" Index="1" Removed="True" />
+            <LayoutItem Id="areaRI" RelativeSize="5.8127018299246505" Index="1" Removed="True" />
+            <LayoutGroup Id="Autof8ba7bce-e445-4772-afcc-cf3b3c1f5b78" ShowCaption="False" Caption="Autof8ba7bce-e445-4772-afcc-cf3b3c1f5b78(42)" Direction="Horizontal" Index="1" RelativeSize="0.18382352941176472" IsNewNode="True">
+              <LayoutGroup Id="Autoc0fcab3c-7195-407c-9be6-74826479b430" ShowCaption="False" Caption="Autoc0fcab3c-7195-407c-9be6-74826479b430(7)" Direction="Horizontal" Index="0" RelativeSize="50" IsNewNode="True" />
+              <LayoutGroup Id="Auto0313f048-a943-4d1c-b9cb-f4a676d0d864" ShowCaption="False" Caption="Auto0313f048-a943-4d1c-b9cb-f4a676d0d864(18)" Direction="Horizontal" Index="1" RelativeSize="50" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutItem Id="respuestaE" ViewItem="respuestaE" Index="1" RelativeSize="13.028169014084508" Removed="True" />
+            <LayoutItem Id="respuestaGO" ViewItem="respuestaGO" Index="1" RelativeSize="13.380281690140846" Removed="True" />
+            <LayoutItem Id="respuestaLRR" ViewItem="respuestaLRR" Index="1" RelativeSize="9.9264705882352935" Removed="True" />
+            <LayoutItem Id="respuestaMUO" ViewItem="respuestaMUO" Index="1" RelativeSize="9.9264705882352935" Removed="True" />
+            <LayoutItem Id="respuestaPPC" ViewItem="respuestaPPC" Index="1" RelativeSize="9.9264705882352935" Removed="True" />
+            <LayoutItem Id="respuestaPPP" ViewItem="respuestaPPP" Index="1" RelativeSize="12.67605633802817" Removed="True" />
+            <LayoutItem Id="respuestaRAO" ViewItem="respuestaRAO" Index="1" RelativeSize="13.732394366197184" Removed="True" />
+            <LayoutItem Id="respuestaRI" ViewItem="respuestaRI" Index="1" RelativeSize="9.9264705882352935" Removed="True" />
+            <LayoutItem Id="areaE" RelativeSize="7.5736325385694245" Index="2" Removed="True" />
+            <LayoutItem Id="respuestaLRC" ViewItem="respuestaLRC" Index="2" RelativeSize="9.9264705882352935" Removed="True" />
+            <LayoutItem Id="areaMUB" Removed="True" />
+            <LayoutItem Id="areaMUO" RelativeSize="4.9495875343721361" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="TablaFinancieraResultados_ListView">
+      <Columns>
+        <ColumnInfo Id="fechaRealizada" SortIndex="0" SortOrder="Descending" />
+        <ColumnInfo Id="realizo" Index="2" />
+        <ColumnInfo Id="distribuidorSel" Index="3" />
+        <ColumnInfo Id="distribuidor" Index="4" />
+        <ColumnInfo Id="IdAuditoria" Index="5" />
+        <ColumnInfo Id="u_bruta" Index="6" />
+        <ColumnInfo Id="v_netas" Index="7" />
+        <ColumnInfo Id="u_operativa" Index="8" />
+        <ColumnInfo Id="v_netas_" Index="9" />
+        <ColumnInfo Id="a_circ" Index="10" />
+        <ColumnInfo Id="pas_circ" Index="11" />
+        <ColumnInfo Id="a_circInv" Index="12" />
+        <ColumnInfo Id="pas_circInv" Index="13" />
+        <ColumnInfo Id="inventario_cv" Index="14" />
+        <ColumnInfo Id="dias_periodo" Index="15" />
+        <ColumnInfo Id="cxc" Index="16" />
+        <ColumnInfo Id="cxc_dp" Index="17" />
+        <ColumnInfo Id="cxp" Index="18" />
+        <ColumnInfo Id="cxp_dp" Index="19" />
+        <ColumnInfo Id="pasivo_tot" Index="20" />
+        <ColumnInfo Id="activo_tot" Index="21" />
+        <ColumnInfo Id="gast_oper" Index="22" />
+        <ColumnInfo Id="vts_netas" Index="23" />
+        <ColumnInfo Id="uti_oper" Index="24" />
+        <ColumnInfo Id="actTot_pasTot" Index="25" />
+      </Columns>
+    </ListView>
+    <ListView Id="v_Condicion_ListView">
+      <Columns>
+        <ColumnInfo Id="Nombre" SortOrder="Descending" Index="-1" />
+        <ColumnInfo Id="Id" Index="0" />
+        <ColumnInfo Id="Punto" Index="1" />
+        <ColumnInfo Id="NombreCondicion" Index="2" />
+        <ColumnInfo Id="Valor" Index="3" />
+        <ColumnInfo Id="R" Index="4" />
+      </Columns>
+    </ListView>
+    <ListView Id="v_Punto_Actividades_ListView">
+      <Columns>
+        <ColumnInfo Id="Objetivo" Index="1" />
+        <ColumnInfo Id="QueHacer" Index="2" />
+        <ColumnInfo Id="Numero" Index="3" />
+        <ColumnInfo Id="Letra" Index="4" />
+        <ColumnInfo Id="Valor" Index="5" />
+        <ColumnInfo Id="Vigencia" Index="6" />
+        <ColumnInfo Id="NivelActividad" Index="7" />
+      </Columns>
+    </ListView>
+    <ListView Id="v_Punto_Condiciones_ListView">
+      <Columns>
+        <ColumnInfo Id="Nombre" Index="-1" />
+        <ColumnInfo Id="NombreCondicion" Index="0" />
+        <ColumnInfo Id="Valor" Index="1" />
+        <ColumnInfo Id="R" Index="2" />
+      </Columns>
+    </ListView>
+    <DetailView Id="v_Punto_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="33.865814696485621">
+            <LayoutGroup Id="v_Punto" RelativeSize="100">
+              <LayoutGroup Id="v_Punto_col1" RelativeSize="50">
+                <LayoutItem Id="Id" RelativeSize="18.285714285714285" />
+                <LayoutItem Id="Subtema" RelativeSize="13.714285714285714" />
+                <LayoutItem Id="Nombre" RelativeSize="13.714285714285714" />
+                <LayoutItem Id="Valor" RelativeSize="13.714285714285714" />
+                <LayoutItem Id="habilitaNA" RelativeSize="12" />
+                <LayoutItem Id="Lubricantes" RelativeSize="12" />
+                <LayoutItem Id="Formal" ViewItem="Formal" Index="6" RelativeSize="16.571428571428573" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="v_Punto_col2" RelativeSize="50">
+                <LayoutItem Id="NivelPunto" Index="0" RelativeSize="18.285714285714285" />
+                <LayoutItem Id="Lugar" Index="1" RelativeSize="13.714285714285714" />
+                <LayoutItem Id="FiguraResponsable" Index="2" RelativeSize="13.714285714285714" />
+                <LayoutItem Id="Evaluador" Index="3" RelativeSize="54.285714285714285" />
+                <LayoutItem Id="Formal" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="31.469648562300321">
+            <LayoutItem Id="NombrePunto" RelativeSize="100" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="34.664536741214057">
+            <LayoutGroup Id="Condiciones" RelativeSize="100">
+              <LayoutItem Id="Condiciones" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Actividades" RelativeSize="100">
+              <LayoutItem Id="Actividades" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="v_Punto_ListView">
+      <Columns>
+        <ColumnInfo Id="Id" Index="0" />
+        <ColumnInfo Id="NombrePunto" Index="1" />
+        <ColumnInfo Id="Subtema" Index="2" />
+        <ColumnInfo Id="Nombre" Index="3" />
+        <ColumnInfo Id="Valor" Index="4" />
+        <ColumnInfo Id="NivelPunto" Index="5" />
+        <ColumnInfo Id="Lugar" Index="6" />
+      </Columns>
+    </ListView>
+    <ListView Id="v_Subtema_ListView">
+      <Columns>
+        <ColumnInfo Id="Id" Index="0" />
+        <ColumnInfo Id="Nombre" Index="1" />
+        <ColumnInfo Id="Area" Index="2" />
+        <ColumnInfo Id="Valor" Index="3" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

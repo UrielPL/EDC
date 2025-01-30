@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="CatalogosLTH" Logo="Action_Inline_Edit">
+  <BOModel>
+    <Class Name="CatalogosLTH.Module.BusinessObjects.mdl_auditoriaactividad">
+      <OwnMembers>
+        <Member Name="status" PredefinedValues="Por realizar;En evaluación;Aprobada;" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default" Index="0" Caption="Auditoria">
+        <Items>
+          <Item Id="Archivos_ListView" Removed="True" />
+          <Item Id="mdl_actividad_ListView" Removed="True" />
+          <Item Id="mdl_catnivel_ListView" Removed="True" />
+          <Item Id="mdl_catpilar_ListView" Removed="True" />
+          <Item Id="mdl_nivel_ListView" Removed="True" />
+          <Item Id="mdl_pilar_ListView" Removed="True" />
+          <Item Id="mdl_pondnivel_ListView" Removed="True" />
+          <Item Id="mdl_pondpilar_ListView" Removed="True" />
+          <Item Id="mdl_punto_ListView" Removed="True" />
+          <Item Id="mdl_tipoauditoria_ListView" Removed="True" />
+          <Item Id="vwactacertadas_ListView" Removed="True" />
+          <Item Id="vwactividad_ListView" Removed="True" />
+          <Item Id="vwpuntostot_ListView" Removed="True" />
+          <Item Id="vwtotal_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="@df4ad22d-b9f9-4b45-955b-ce21555dd211" Caption="Catálogos" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="Archivos_ListView" ViewId="Archivos_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="mdl_actividad_ListView" ViewId="mdl_actividad_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="mdl_catnivel_ListView" ViewId="mdl_catnivel_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="mdl_catpilar_ListView" ViewId="mdl_catpilar_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="mdl_nivel_ListView" ViewId="mdl_nivel_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="mdl_pilar_ListView" ViewId="mdl_pilar_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="mdl_pondnivel_ListView" ViewId="mdl_pondnivel_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="mdl_pondpilar_ListView" ViewId="mdl_pondpilar_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="mdl_punto_ListView" ViewId="mdl_punto_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="mdl_tipoauditoria_ListView" ViewId="mdl_tipoauditoria_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="vwactacertadas_ListView" ViewId="vwactacertadas_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="vwactividad_ListView" ViewId="vwactividad_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="vwpuntostot_ListView" ViewId="vwpuntostot_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="vwtotal_ListView" ViewId="vwtotal_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="22.1.3.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="mdl_Area_LookupListView">
+      <Columns>
+        <ColumnInfo Id="@25365c7f-09d8-43e0-800e-68f8c7c19e2b" PropertyName="Idtipoaud" IsNewNode="True" />
+      </Columns>
+    </ListView>
+    <DetailView Id="mdl_auditoriaactividad_DetailView">
+      <Items>
+        <PropertyEditor Id="status" PredefinedValues="Por realizar;En revisión;Completada;" />
+      </Items>
+    </DetailView>
+    <DetailView Id="mdl_distribuidor_DetailView">
+      <Items>
+        <PropertyEditor Id="nombredist" EditMaskType="Simple" EditMask="" />
+      </Items>
+    </DetailView>
+    <ListView Id="mdl_distribuidor_ListView">
+      <Columns>
+        <ColumnInfo Id="avanceAdministracion" Index="-1" />
+        <ColumnInfo Id="avanceEjecucion" Index="-1" />
+        <ColumnInfo Id="avanceInfra" Index="-1" />
+        <ColumnInfo Id="avancePlaneacion" Index="-1" />
+        <ColumnInfo Id="avanceProd" Index="-1" />
+        <ColumnInfo Id="nombreusuario" Index="-1" />
+        <ColumnInfo Id="nombredist" Width="352" SortOrder="Ascending" />
+        <ColumnInfo Id="zonastr" Index="1" />
+        <ColumnInfo Id="profesionalizacion" Index="2" />
+        <ColumnInfo Id="UltimaAuditoria" Index="3" />
+        <ColumnInfo Id="nivelAct" Index="4" />
+        <ColumnInfo Id="NivelActual" Index="5" />
+        <ColumnInfo Id="zona" Removed="True" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Usuario_DetailView">
+      <Items>
+        <PropertyEditor Id="UserName" EditMaskType="Simple" EditMask="" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="28.933333333333334">
+            <LayoutGroup Id="Usuario" RelativeSize="58.525345622119815">
+              <LayoutGroup Id="Usuario_col1" RelativeSize="50">
+                <LayoutItem Id="Nombre" RelativeSize="36.170212765957444" />
+                <LayoutItem Id="email" RelativeSize="27.659574468085108" />
+                <LayoutItem Id="TipoUsuario" RelativeSize="36.170212765957444" />
+              </LayoutGroup>
+              <LayoutGroup Id="Usuario_col2" Caption="Usuario_col2" RelativeSize="50">
+                <LayoutItem Id="Jefe" RelativeSize="100" />
+                <LayoutItem Id="Zona" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="SecuritySystemUserBase" Index="1" RelativeSize="41.474654377880185">
+              <LayoutItem Id="ChangePasswordOnFirstLogon" RelativeSize="35.555555555555557" />
+              <LayoutItem Id="UserName" RelativeSize="28.888888888888889" />
+              <LayoutItem Id="IsActive" RelativeSize="35.555555555555557" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="71.066666666666663">
+            <LayoutGroup Id="Dependientes" RelativeSize="100">
+              <LayoutItem Id="Dependientes" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Actividades" RelativeSize="100">
+              <LayoutItem Id="Actividades" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Roles" RelativeSize="100">
+              <LayoutItem Id="Roles" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

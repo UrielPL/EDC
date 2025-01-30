@@ -1,0 +1,244 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="lthMasterPage.master.cs" Inherits="CatalogosLTH.Web.lthMasterPage" %>
+
+<!DOCTYPE html>
+<html dir="ltr" lang="es-mx" xml:lang="es-mx" class="yui3-js-enabled">
+
+    <head >
+    <title></title>
+    
+</head>
+
+
+<head runat="server">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="keywords" content="LTH">
+	<asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+	<title>LTH</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
+    <link rel="stylesheet" href=" https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+	<script type="text/javascript" src="./files/jquery-1.11.0.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="./files/all.css">
+	<link rel="stylesheet" type="text/css" href="./files/nifty.min.css">
+	<link rel="stylesheet" type="text/css" href="./files/font_icon_help.css">
+	<link rel="stylesheet" type="text/css" href="./files/colors.css">
+	<link rel="stylesheet" type="text/css" href="./files/nifty-overwriting.css">
+
+
+	<!-- add stylesheets for the custom navigation -->
+	<link rel="stylesheet" type="text/css" href="./files/default.css">
+	<script type="text/javascript" src="./files/bootstrap.js"></script>
+	<script type="text/javascript" src="./files/bootstrapValidator.js"></script>
+
+	<link href="./files/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./files/general_fonts.css">
+    <link href="files/custom.css" rel="stylesheet" />
+</head>
+
+<body id="page-blocks-paradiso_teamwork-myteam" class="hide-header format-site  path-blocks path-blocks-paradiso_teamwork safari dir-ltr lang-es_mx yui-skin-sam yui3-skin-sam lth-paradisolms-net pagelayout-base course-1 context-1  jsenabled nifty-ready" data-pagetype="blocks-paradiso_teamwork-myteam" style="background-color:#E0E0E0">
+
+<div id="container" class="effect mainnav-lg mainnav-fixed navbar-fixed">
+	<!-- header -->
+	<header id="navbar" >
+		<div id="navbar-container" class="boxed" style="background-color:#03274E !important">
+			<div id="normal-header">
+				<div class="container-fluid" >
+					<!-- Right menu -->
+					<div id="rightelements-container">
+						<div id="right-elements">
+				     	<!-- Top menu -->
+				     		
+							<!-- points -->
+				     	
+							<!-- added/edit by anil 18-08-14-->
+							<nav class="headermenu" >
+								<div id="profile">
+									<!-- User picture -->
+									<div id="profileblock" class="hidden-xs">
+										<!--<a href="#">-->
+											<!--<img src="./files/f2.jpg" alt="Imagen de Cristina Rodriguez" title="Imagen de Cristina Rodriguez" class="img-circle media-object" width="35" height="35">-->
+                                           
+
+									<!--	</a>->
+									</div>
+									<!-- end user picture -->
+		<%
+            string nombre = ViewState["nombreUsuario"] as string;
+            string rol = ViewState["rol"] as string;
+            string permiso = ViewState["permiso"] as string;
+         %>
+									<div class="logininfo">
+										<span class="loggedinas pad-lft">
+                                            
+											<a id="user" runat="server" href="#" title="Ver perfil" onserverclick="salir" style="color:white"> <i class="fa fa-sign-out " aria-hidden="true" style="color:white" >(CERRAR SESIÓN) &nbsp;</i><%:ViewState["nombreUsuario"].ToString() %></a>
+										</span>
+									</div>
+								</div>							
+							</nav>
+							<!-- End Top menu -->
+						</div>
+				    </div>
+					<!-- end right column -->
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end of header -->
+	
+	<div class="wrapper boxed HideMenus-LMS" id="yui_3_15_0_2_1469048927614_100">
+		<nav style="position:fixed; border:0px; !important" id="mainnav-container">
+			<a class="mainnav-toggle"><i style="display:none; color:white" id="arrowButLeft" class="fa fa-2x fa-angle-double-left" ></i></a>
+			<a class="mainnav-toggle"><i style="display:none; color:white" id="arrowButRight" class="fa fa-2x fa-angle-double-right"></i></a>
+			<div id="mainnav">
+			    <div id="plms-region-pre" class="block-region left-column block-container" style="z-index:10;">
+			        <div class="region-content">
+						<!-- logo -->
+						<div class="logo-container hidden-sm hidden-xs">
+							<div class="container-fluid pad-no">
+								<h1 class="logo" style="position: relative; top: -25px;">
+									<a href="http://lth.paradisolms.net/" title="Home">
+										<img class="img-responsive" src="Images/JCI - Logo_2.png" alt="Logo">
+									</a>
+								</h1>
+							</div>
+						</div>
+						<!-- End logo -->
+                        <%
+                            string url = HttpContext.Current.Request.Url.AbsolutePath;
+                         %>
+						<div id="mainnav-menu-wrap" class="block_customnavigation">
+							<div class="nano has-scrollbar">
+								<div id="block-plms-cm" class="nano-content" style="margin-right: -15px; height: 399px;" tabindex="0">
+									<ul id="mainnav-menu" class="list-group">
+                                          <%if (permiso == "Admin")
+                                           {
+	                                       %>
+										<li>
+											<a target="" href="crearAuditoria.aspx" <%if (url.Contains("crearAuditoria")){ %>class="active-item"<%}%>>
+												<span class="icon" title=""><i class="fa fa-file"></i><span class="vertical-align"></span></span>
+												<span class="menu-title">CREAR AUDITORIA</span><div class="sub-title-menu-elements">CREAR AUDITORIA</div>
+											</a>
+										</li>
+                                          <%
+                                           }
+                                          %>	
+                                         
+                                         <%if (permiso != "Evaluador"){%>	                                      
+                                        <li>
+											<a target="" href="NivelDistribuidor.aspx"<%if (url.Contains("NivelDistribuidor")){ %>class="active-item"<% }%>>
+												<span class="icon" title=""><i class="fa fa-bar-chart"></i><span class="vertical-align"></span></span>
+												<span class="menu-title">CONSULTAR NIVEL </span><div class="sub-title-menu-elements">CONSULTAR NIVEL</div>
+											</a>
+										</li>
+                                         <%}%>
+                                         <%if (permiso != "Evaluador"){%>	                                      
+                                        <li>
+											<a target="" href="listaactividades.aspx"<%if (url.Contains("listaactividades")){ %>class="active-item"<% }%>>
+												<span class="icon" title=""><i class="fa fa-list-alt"></i><span class="vertical-align"></span></span>
+												<span class="menu-title">PLAN DE NEGOCIO</span><div class="sub-title-menu-elements">PLAN DE NEGOCIO</div>
+											</a>
+										</li>
+                                        <%}%>
+                                        <li>
+											<a target="" href="catalogoactividades.aspx"<%if (url.Contains("catalogoactividades")){ %>class="active-item"<% }%>>
+												<span class="icon" title=""><i class="fa fa-book"></i><span class="vertical-align"></span></span>
+												<span class="menu-title">BIBLIOTECA DE ACTIVIDADES</span><div class="sub-title-menu-elements">BIBLIOTECA DE ACTIVIDADES</div>
+											</a>
+										</li><li>
+											<a target="" href="ActividadesCompletadas.aspx"<%if (url.Contains("ActividadesCompletadas")){ %>class="active-item"<% }%>>
+												<span class="icon" title=""><i class="fa fa-check-square-o"></i><span class="vertical-align"></span></span>
+												<span class="menu-title">ACTIVIDADES COMPLETADAS</span><div class="sub-title-menu-elements">ACTIVIDADES COMPLETADAS</div>
+											</a>
+
+										</li>
+                                         <%if (permiso != "Evaluador"&& permiso!="GerenteCuenta" && permiso!="GerenteDesarrolloComercial"&&permiso!="GerenteVenta"&&permiso!="DirectorGeneral"){%>	
+                                        <li>
+											<a target="" href="catalogoauditorias.aspx"<%if (url.Contains("catalogoauditorias")){ %>class="active-item"<% }%>>
+												<span class="icon" title=""><i class="fa fa-table"></i><span class="vertical-align"></span></span>
+												<span class="menu-title">CATALOGO AUDITORIAS</span><div class="sub-title-menu-elements">CATALOGO AUDITORIAS</div>
+											</a>
+										</li>	
+                                        <%}%>
+                                        <%if (permiso != "Distribuidor"&&permiso!="GerenteVenta"&&permiso!="DirectorGeneral"){%>
+                                        <li>
+											<a target="" href="actividadesrevisar.aspx"<%if (url.Contains("actividadesrevisar")){ %>class="active-item"<% }%>>
+												<span class="icon" title=""><i class="fa fa-check"></i><span class="vertical-align"></span></span>
+												<span class="menu-title">ACTIVIDADES A REVISAR</span><div class="sub-title-menu-elements">ACTIVIDADES A REVISAR</div>
+											</a>
+										</li>	
+                                        <%} %>	
+                                        
+										<li>
+											<a target="" href="Tablero1.aspx" <%if (url.Contains("Tablero1")){ %>class="active-item"<% }%>>
+												<span class="icon" title=""><i class="fa fa-clipboard"></i><span class="vertical-align"></span></span>
+												<span class="menu-title">REPORTES</span><div class="sub-title-menu-elements">REPORTES</div>
+											</a>
+										</li>
+                                          	
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- end left column -->
+	    <div id="content-container"  style="background-color:#E0E0E0;margin-top:0px;padding-top:0px;" >            
+	        <div id="page-content"  style="margin:0px;padding:0px;">
+	            <div class="row" style="background-color:#E0E0E0">
+	                <div class="col-xs-12">
+	                    <div id="region-main-wrap">
+	                        <div id="region-main">
+	                            <div class="region-content panel pad-all this region" style="padding:0px; !important">
+	                                <div role="main">
+	                                    <form id="form1" runat="server">
+                                        <div>
+                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                                            </asp:ContentPlaceHolder>
+                                        </div>
+                                        </form>
+									</div>
+									<div class="clearfix"></div>
+	                            </div>
+	                        </div>
+	                        <div class="clearfix"></div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>
+    
+<script type="text/javascript" src="./files/nifty.min.js"></script>
+<script type="text/javascript" src="./files/jquery.scrollTo.min.js"></script>
+    
+<!-- footer -->
+<div id="page-footer" class="clearfix" style="background-color:#03274E !important">
+    <div class="footer-logo">
+    	<span>
+            <a href="#" target="_blank">Powered By Paradiso LMS </a>
+		</span>
+	</div>
+</div>
+<!-- end of footer -->
+</body></html>
+
+<!--<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+
+<body>
+    
+</body>
+
+
+
+</html>-->
